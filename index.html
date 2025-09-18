@@ -2,11 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website - lakshya khetan</title>
+    <meta name="description" content="Lakshya Khetan - Software Developer, Frontend Developer, and AI/ML enthusiast. Portfolio showcasing projects in web development, machine learning, and more.">
+    <meta name="keywords" content="Lakshya Khetan, Software Developer, Web Developer, Frontend Developer, AI ML, Portfolio, JavaScript, React, Node.js, Python, VIT Vellore">
+    <meta name="author" content="Lakshya Khetan">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Lakshya Khetan - Software Developer Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Lakshya Khetan, a passionate software developer specializing in frontend development and AI/ML technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="my photo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lakshya Khetan - Software Developer Portfolio">
+    <meta name="twitter:description" content="Portfolio of Lakshya Khetan showcasing web development projects and technical skills.">
+    <title>Lakshya Khetan - Software Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project-modal.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     
 
@@ -17,20 +28,24 @@
 
         <div class="container">
 
-            <div class="navbar">
+            <nav class="navbar">
 
                 <div class="logo-container">
-                    <img src="logo.jpg" class="logo">
-                    <div class="logo-text">akshya Khetan</div>
+                    <img src="logo.jpg" class="logo" alt="Lakshya Khetan Logo">
+                    <div class="logo-text">Lakshya Khetan</div>
                 </div>
 
                 <div class="nav-items">
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#experience">Experience</a></div>
                     <div><a href="#projects">Projects</a></div>
-                    <div><a href="#skills">Skills</a></div>
-                    <div><a href="#contactme">Contact Me</a></div>
+                    <!-- Skills link removed -->
+                    <div><a href="#achievements">Achievements</a></div>
+                    <div><a href="#resume">Resume</a></div>
+                    <div><a href="#contactme">Contact</a></div>
                 </div>
-            </div>
-            <div class="hero-section">
+            </nav>
+            <main class="hero-section">
                 <div class="absolute faded-text">LAKSHYA KHETAN</div>
                 <div class="hero-section-left">
                     <div class="hero-section-heading">Hi!! Lakshya Khetan </div>
@@ -38,60 +53,250 @@
                         I am a <span class="role"> </span>
                     </div>
     
-                    <div class="hero-section-discription">
-                        I'm a softwere developer and here is my portfolio website. here you'll 
-                        learn about my journey as a softwere developer. 
+                    <div class="hero-section-description">
+                        I'm a software developer and here is my portfolio website. Here you'll 
+                        learn about my journey as a software developer. 
                     </div>
     
     
-                    <div class="btn-pink" id="btn">Hire me</div> 
+                    <div class="btn-pink" id="btn" onclick="openHireModal()">Hire me</div> 
                 </div>
                  <div class="hero-section-right">
                     <div class="user-image">
-                        <img src="my photo.jpg" alt="my photo"/>
+                        <img src="my photo.jpg" alt="Lakshya Khetan Profile Photo"/>
                     </div>
     
                  </div>
     
-            </div>
+            </main>
         </div>
 
-        <div class="project-section" id="projects">
+        <!-- About Section -->
+        <section id="about" class="about-section fade-in">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-left">
+                        <h2 class="section-heading">About <span class="highlight">Me</span></h2>
+                        <div class="about-text">
+                            <p>
+                                I'm Lakshya Khetan, a passionate <strong>Software Engineer</strong> and <strong>Frontend Developer</strong> 
+                                currently pursuing my degree at VIT Vellore. With expertise spanning web development, 
+                                mobile app development, and data science, I thrive on building innovative solutions 
+                                that make a real impact.
+                            </p>
+                            <p>
+                                As a <strong>Senior Radio Jockey at VIT Community Radio (VCR)</strong>, I've honed my 
+                                communication skills while leading and mentoring junior team members. My technical 
+                                journey includes developing frontend web applications, mobile apps with Flutter, 
+                                and AI/ML projects that solve real-world problems.
+                            </p>
+                            <p>
+                                Beyond coding, I'm actively involved in <strong>NGO work</strong>, teaching underprivileged 
+                                children, and contributing to open-source projects. I believe in continuous learning 
+                                and am always eager to take on challenging projects that push the boundaries of technology.
+                            </p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">Fresher</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">GitHub Contributions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-skills-grid">
+                            <div class="skill-category">
+                                <h3>Languages</h3>
+                                <div class="skills-list">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Dart</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3> Technologies/Frameworks</h3>
+                                <div class="skills-list">
+                                    <span class="skill-tag">Flutter</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag"> Node.js</span>
+                                    <span class="skill-tag">Firebase</span>
+                                    <span class="skill-tag">Git</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Developer Tools</h3>
+                                <div class="skills-list">
+                                    <span class="skill-tag"> VS Code</span>
+                                    <span class="skill-tag">Android Studio</span>
+                                    <span class="skill-tag"> MySQL</span>
+                                    <span class="skill-tag"> Workbench</span>
+                                    <span class="skill-tag">Postman</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section fade-in">
+            <div class="container">
+                <h2 class="section-heading center">My <span class="highlight">Journey</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item slide-in-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <h3 class="timeline-title">Senior Radio Jockey</h3>
+                            <h4 class="timeline-company">VIT Community Radio (VCR)</h4>
+                            <p class="timeline-description">
+                                Hosted and produced multiple cultural programs and live talk shows, engaging the university community. 
+                                Mentored and trained a team of 10+ junior RJs in content creation, public speaking, and broadcasting techniques.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="timeline-skill">Leadership</span>
+                                <span class="timeline-skill">Communication</span>
+                                <span class="timeline-skill">Event Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item slide-in-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">May 2025 - June 2025</div>
+                            <h3 class="timeline-title">Web Development Intern</h3>
+                            <h4 class="timeline-company">Primus Partners Solutions Private Limited</h4>
+                            <p class="timeline-description">
+                                Engineered the front-end for the Uttarakhand government's 'Pariwar Pehchan Patra' portal, 
+                                developing critical UI components including user registration, help desk logins, and data 
+                                dashboards using React and Tailwind CSS. Developed core user-facing features for the 
+                                companion mobile application using Flutter, building the user authentication flow and 
+                                profile management screens.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="timeline-skill">React.js</span>
+                                <span class="timeline-skill">Tailwind CSS</span>
+                                <span class="timeline-skill">Flutter</span>
+                                <span class="timeline-skill">Government Portal Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item slide-in-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Oct 2024 - Nov 2024</div>
+                            <h3 class="timeline-title">Front-End Developer Intern</h3>
+                            <h4 class="timeline-company">Kalkani</h4>
+                            <p class="timeline-description">
+                                Developed the startup's public-facing website from the ground up using HTML5, CSS3, and 
+                                JavaScript to showcase their core AI surveillance product. Implemented a fully responsive, 
+                                mobile-first design to ensure a seamless user experience across desktops, tablets, and smartphones.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="timeline-skill">HTML5</span>
+                                <span class="timeline-skill">CSS3</span>
+                                <span class="timeline-skill">JavaScript</span>
+                                <span class="timeline-skill">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item slide-in-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Feb 2023 - Present</div>
+                            <h3 class="timeline-title">Executive Board Member</h3>
+                            <h4 class="timeline-company">Juvenile Care Club</h4>
+                            <p class="timeline-description">
+                                Led and organized 5+ community outreach events, including 'Each One, Teach One' educational 
+                                sessions, virtual activities for orphans, and fundraising drives for local NGOs. 
+                                Impacted 100+ students across multiple initiatives.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="timeline-skill">Leadership</span>
+                                <span class="timeline-skill">Community Service</span>
+                                <span class="timeline-skill">Event Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="timeline-item slide-in-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - Expected May 2026</div>
+                            <h3 class="timeline-title">Computer Science Student</h3>
+                            <h4 class="timeline-company">VIT Vellore</h4>
+                            <p class="timeline-description">
+                                Pursuing Bachelor of Technology in Computer Science & Engineering at 
+                                Vellore Institute of Technology. Expected graduation in May 2026. 
+                                Actively participating in technical clubs, hackathons, and community activities.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="timeline-skill">Data Structures</span>
+                                <span class="timeline-skill">Algorithms</span>
+                                <span class="timeline-skill">Machine Learning</span>
+                                <span class="timeline-skill">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section fade-in" id="projects">
             <h2 class="page-header">Projects</h2>
 
 
             <div class="project-container">
-                <div class="project-card" id="project1">
+                <div class="project-card slide-in-left" id="project1">
                     <div class="project-number project-number-right">01</div>
                     <div class="project-content project-content-left">
                         <div class="project-skills-container">
                             
-                            <i class="fab fa-html5 skills-logo" title="HTML"></i>
-                            <i class="fab fa-css3-alt skills-logo" title="CSS"></i>
-                            <i class="fab fa-js skills-logo" title="JavaScript"></i>
-                            <i class="fab fa-react skills-logo" title="React"></i>
-                            <i class="fab fa-node-js skills-logo" title="Node.js"></i>
+                            <i class="fab fa-flutter skills-logo" title="Flutter"></i>
+                            <i class="fab fa-dart skills-logo" title="Dart"></i>
+                            <i class="fas fa-mobile-alt skills-logo" title="Mobile Development"></i>
+                            <i class="fab fa-firebase skills-logo" title="Firebase"></i>
+                            <i class="fas fa-map-marked-alt skills-logo" title="Maps API"></i>
                             
 
                         </div>
-                        <h2 class="project-heading">EXPENSE TRACKER</h2>
+                        <h2 class="project-heading">TRAVEL PLANNER</h2>
 
 
                         <p class="project-subHeading">  
-                            A user-friendly application for tracking daily 
-                            expenses and income, featuring intuitive 
-                            categorization and real-time balance updates,
-                            built to simplify personal finance management.
+                            A comprehensive Flutter mobile application for travel planning 
+                            and management. Features include trip planning, itinerary management, 
+                            expense tracking, location services, and real-time collaboration 
+                            with Firebase backend integration.
                         </p>
 
 
                         <div class="btn-grp">
-                            <button class="btn-pink btn-project">Read More</button>
-                            <a href="">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            <button class="btn-pink btn-project" onclick="openProjectModal('travel-planner')">Read More</button>
+                            <a href="https://github.com/fusebox440/travel_planner" target="_blank">
+                            <i title="GitHub Repository" class="fa-brands fa-github icon"></i>
                             </a>
-                            <a href="https://github.com/fusebox440">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            <a href="https://github.com/fusebox440/travel_planner" target="_blank">
+                            <i title="View Code" class="fa-solid fa-code icon"></i>
                             </a>
                         </div>
                         
@@ -99,34 +304,34 @@
                     </div>
                 </div>
 
-                <div class="project-card" id="project2">
+                <div class="project-card slide-in-right" id="project2">
                     <div class="project-number project-number-left ">02</div>
                     <div class="project-content project-content-right">
                         <div class="project-skills-container">
-                            <i class="fas fa-brain skills-logo" title="Artificial Intelligence"></i>
-                            <i class="fas fa-robot skills-logo" title="Robotics"></i>
-                            <i class="fas fa-database skills-logo" title="Database"></i>
-                            <i class="fas fa-network-wired skills-logo" title="Deep Learning"></i>
-                            <i class="fas fa-cloud skills-logo" title="Cloud Computing"></i>
+                            <i class="fab fa-flutter skills-logo" title="Flutter"></i>
+                            <i class="fab fa-dart skills-logo" title="Dart"></i>
+                            <i class="fab fa-firebase skills-logo" title="Firebase"></i>
+                            <i class="fab fa-google skills-logo" title="Google Cloud AI"></i>
+                            <i class="fas fa-brain skills-logo" title="AI/ML"></i>
                             
 
                         </div>
-                        <h2 class="project-heading">Hinglish to English transletor</h2>
+                        <h2 class="project-heading">WISME-AI</h2>
 
 
-                        <p class="project-subHeading">An NLP-based tool that translates Hinglish 
-                            text into grammatically correct English using machine learning and
-                             transliteration for accurate, context-aware results.
+                        <p class="project-subHeading">
+                            Conversational Learning App - An AI-powered Flutter app designed to solve low online course 
+                            completion rates by transforming content into engaging, AI-generated audio dialogues.
                         </p>
 
                         
                         <div class="btn-grp">
-                            <button class="btn-pink btn-project">Read More</button>
-                            <a href="">
-                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            <button class="btn-pink btn-project" onclick="openProjectModal('wisme-ai')">Read More</button>
+                            <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank">
+                            <i title="GitHub Repository" class="fa-brands fa-github icon"></i>
                             </a>
-                            <a href="">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank">
+                            <i title="View Code" class="fa-solid fa-code icon"></i>
                             </a>
                         </div>
                         
@@ -135,78 +340,139 @@
                 </div>
 
                 
-        </div>
-        <div id="skills" class="container skills-container ">
-            <div class="skill-fade-text">Skills</div>
+        
+        
   
-            <div class="skill-container-left">
-              <h2 class="skill-heading">
-                <span class="caps">M</span>e and
-                <br />
-                MyTech Stack
-              </h2>
-  
-              <div class="skill-subHeading">
-                <p>
-                    Hello, my name is Lakshya Khetan. I am a third-year
-                    student at Vellore Institute of Technology, Vellore,
-                    Tamil Nadu. I am passionate about technology and
-                    constantly eager to learn and explore more. With
-                    strong skills in coding and software development,
-                    specialize in front-end development and have a
-                    keen interest in AI/ML-related fields. My 
-                    enthusiasm for innovation drives me to continually
-                    enhance my knowledge and expertise in these domains.
-                </p>
-                <p>
-                    My hobbies include reading books, particularly those
-                    in the genres of mythology and philosophy. I have
-                    worked with several NGOs, where I had the opportunity
-                    to teach children. This experience has been incredibly 
-                    rewarding, as it allowed me to make a positive impact 
-                    while also learning and growing significantly. Another 
-                    hobby of mine is engaging in conversations with people, 
-                    including strangers. To pursue this passion, I am working 
-                    as a radio jockey in my college club, VIT Community Radio
-                    (VCR). As a senior RJ, I have hosted numerous shows and 
-                    candid talks, interacting with a diverse range of individuals. 
-                    Additionally, I have mentored junior RJs, guiding them to 
-                    improve and excel in their roles.
-                </p>
-              </div>
-            </div>
-            <div class="skill-container-right">
-                
-                <i class="fab fa-html5 skills-logo" title="HTML"></i>
-                <i class="fab fa-css3-alt skills-logo" title="CSS"></i>
-                <i class="fab fa-js skills-logo" title="JavaScript"></i>
-                <i class="fab fa-react skills-logo" title="React"></i>
-                <i class="fab fa-node-js skills-logo" title="Node.js"></i>
-                <i class="fas fa-database skills-logo" title="SQL"></i>
-                <i class="fab fa-aws skills-logo" title="AWS"></i>
-                <i class="fas fa-server skills-logo" title="Express.js"></i>
-                <i class="fas fa-code-branch skills-logo" title="Redux"></i>
-                <i class="fas fa-cloud skills-logo" title="Vercel"></i>
-                <i class="fab fa-python skills-logo" title="Python"></i>
-                <i class="fab fa-java skills-logo" title="Java"></i> 
-                <i class="fab fa-git-alt skills-logo" title="Git"></i> 
-                <i class="fab fa-docker skills-logo" title="Docker"></i> 
-                <i class="fab fa-kubernetes skills-logo" title="Kubernetes"></i> 
-            
-                
-                <img class="project-skill" src="aiml.jpg" alt="AiML" title="AiML" />
-                <img class="project-skill" src="canva.png" alt="Canva" title="Canva" />
-                <img class="project-skill" src="mongodb-icon-1.svg" alt="MongoDB" title="MongoDB" />
-                
-                <img class="project-skill" src="nextjs.png" alt="NextJS" title="NextJS" />
-            </div>
+             
             
             
             
             
             
-            </div>
-            <div class="contactus-form-container" id="contactme">
+            
+            
+        
+
+            <!-- Resume Section -->
+            <section id="resume" class="resume-section fade-in">
+                <div class="container">
+                    <h2 class="section-heading center">My <span class="highlight">Resume</span></h2>
+                    <div class="resume-content">
+                        <div class="resume-preview">
+                            <div class="resume-placeholder">
+                                <i class="fas fa-file-pdf resume-icon"></i>
+                                <h3>Lakshya Khetan - Resume</h3>
+                                
+                                <p class="resume-description">
+                                    Download my complete resume to learn more about my experience, 
+                                    projects, and technical skills in detail.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="resume-actions">
+                            <button class="btn-pink resume-download" onclick="downloadResume()">
+                                <i class="fas fa-download"></i>
+                                Download Resume
+                            </button>
+                            <button class="btn-secondary resume-view" onclick="viewResume()">
+                                <i class="fas fa-eye"></i>
+                                View Online
+                            </button>
+                        </div>
+                        <div class="resume-stats">
+                            <div class="resume-stat">
+                                <i class="fas fa-code"></i>
+                                <span>5+ Projects</span>
+                            </div>
+                            <div class="resume-stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>VIT Vellore</span>
+                            </div>
+                            
+                            <div class="resume-stat">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Fresher</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements" class="achievements-section fade-in">
+                <div class="container">
+                    <h2 class="section-heading center">My <span class="highlight">Achievements</span></h2>
+                    <div class="achievements-grid">
+                        <div class="achievement-card slide-in-left">
+                            <div class="achievement-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Senior Radio Jockey</h3>
+                            <p>VIT Community Radio (VCR)</p>
+                            <span class="achievement-description">
+                                Leading radio programs and mentoring 15+ junior members. 
+                                Hosted 50+ successful shows with high audience engagement.
+                            </span>
+                        </div>
+                        
+                        <div class="achievement-card slide-in-right">
+                            <div class="achievement-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Executive Board Member</h3>
+                            <p>Juvenile Care Club, VIT</p>
+                            <span class="achievement-description">
+                                Active member of the Executive Board, contributing to child welfare initiatives 
+                                and community service programs focused on supporting underprivileged youth.
+                            </span>
+                        </div>
+                        
+                        <div class="achievement-card slide-in-left">
+                            <div class="achievement-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3>Oracle Certified Professional</h3>
+                            <p>Java SE 17 Developer</p>
+                            <span class="achievement-description">
+                                Oracle Certified Professional Java SE 17 Developer certification. 
+                                Demonstrated expertise in Java programming, OOP principles, and enterprise development.
+                            </span>
+                        </div>
+                        
+                        <div class="achievement-card slide-in-right">
+                            <div class="achievement-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Academic Excellence</h3>
+                            <p>VIT Vellore</p>
+                            <span class="achievement-description">
+                                I have maintained a strong academic record
+                                while actively applying my knowledge through 
+                                projects in front-end, Flutter, and app development.
+                                My consistent performance reflects not only technical 
+                                proficiency but also the ability to translate learning into 
+                                impactful, real-world solutions.
+                            </span>
+                        </div>
+                        
+                        <div class="achievement-card slide-in-left">
+                            <div class="achievement-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>App Developer</h3>
+                            <p>Flutter & React Native</p>
+                            <span class="achievement-description">
+                                Developed multiple mobile applications including the 
+                                Travel Planner app with advanced features and UI/UX.
+                            </span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contactus-form-container fade-in" id="contactme">
                 <div class="container">
 
 
@@ -224,24 +490,24 @@
                                     type="text"
                                     name="name"
                                     id="" 
-                                    placeholder="Entre your name"/>
+                                    placeholder="Enter your name"/>
 
                                     <input class="formfield"
                                     name="email"
                                     type="email"
                                     id=""
-                                    placeholder="Entre your email address"/> 
+                                    placeholder="Enter your email address"/> 
 
                                     <input class="formfield"
                                     name="subject"
                                     type="text"
                                     id=""
-                                    placeholder="Entre your subject"/>
+                                    placeholder="Enter your subject"/>
                                     
                                     <textarea name="message"
                                     id="" cols="30" rows="10"
                                     class="formfield formfield-textarea"
-                                    placeholder="Entre your message"></textarea> 
+                                    placeholder="Enter your message"></textarea> 
 
 
 
@@ -263,9 +529,9 @@
 
                     
                             
-                         </div>
+                         </section>
                 </div>
-            </div>
+            </section>
 
             <footer>
                 <div class="container">
@@ -276,7 +542,10 @@
                                 <a href="#projects">Projects</a>
                             </div>
                             <div>
-                                <a href="#skills">Skills</a>
+                                <a href="#achievements">Achievements</a>
+                            </div>
+                            <div>
+                                <a href="#resume">Resume</a>
                             </div>
                             <div>
                                 <a href="#contactme">Contact Me</a>
@@ -295,10 +564,126 @@
                 </div>
             </footer>
     
-       
+    <!-- Hire Me Modal -->
+    <div id="hireModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Let's Work Together!</h2>
+                <span class="close" onclick="closeHireModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>I'm excited to discuss potential opportunities and how I can contribute to your team!</p>
+                <div class="hire-options">
+                    <a href="mailto:lakshya.khetan@example.com?subject=Job Opportunity&body=Hi Lakshya, I'd like to discuss a potential opportunity..." class="hire-btn">
+                        <i class="fas fa-envelope"></i>
+                        Send Email
+                    </a>
+                    <a href="https://linkedin.com/in/lakshya-khetan" target="_blank" class="hire-btn">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/fusebox440" target="_blank" class="hire-btn">
+                        <i class="fab fa-github"></i>
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-       
+    <!-- Project Modals -->
+    <!-- Travel Planner Modal -->
+    <div id="travel-planner-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Travel Planner - Flutter Mobile App</h2>
+                <span class="close" onclick="closeProjectModal('travel-planner')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-content">
+                    <h3>Project Overview</h3>
+                    <p>A comprehensive Flutter mobile application for travel planning and management that helps users organize trip itineraries, track expenses, and manage packing lists with Firebase backend integration.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Trip Planning & Itinerary Management</li>
+                        <li>Expense Tracking with Budget Management</li>
+                        <li>Smart Packing Lists</li>
+                        <li>Location Services & Maps Integration</li>
+                        <li>Firebase Firestore for Real-time Data Synchronization</li>
+                        <li>Cross-device Compatibility</li>
+                        <li>Offline Mode Support</li>
+                    </ul>
+                    
+                    <h3>Tech Stack</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Firestore</span>
+                        <span class="tech-tag">Maps API</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/fusebox440/travel_planner" target="_blank" class="btn-pink">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Wisme-AI Modal -->
+    <div id="wisme-ai-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Wisme-AI - Conversational Learning App</h2>
+                <span class="close" onclick="closeProjectModal('wisme-ai')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-content">
+                    <h3>Project Overview</h3>
+                    <p>Spearheaded the conceptualization of 'Wisme,' an AI-powered app in Flutter designed to solve low online course completion rates by transforming content into engaging, AI-generated audio dialogues.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>AI-powered conversational learning system</li>
+                        <li>Audio-first UI/UX design</li>
+                        <li>Firebase authentication and Firestore integration</li>
+                        <li>Real-time analytics system</li>
+                        <li>Proprietary 'Engagement Score' calculation</li>
+                        <li>Product-market fit measurement tools</li>
+                        <li>High-retention learning experience</li>
+                    </ul>
+                    
+                    <h3>Technical Implementation</h3>
+                    <ul>
+                        <li>Engineered full-stack solution using Firebase</li>
+                        <li>Google Cloud AI integration for intelligent conversations</li>
+                        <li>Real-time data synchronization with Firestore</li>
+                        <li>Comprehensive analytics system</li>
+                        <li>User persona-based feature roadmap</li>
+                    </ul>
+                    
+                    <h3>Tech Stack</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Google Cloud AI</span>
+                        <span class="tech-tag">Firestore</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank" class="btn-pink">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -306,16 +691,250 @@
   <script>
     var typeData = new Typed(".role", {
       strings: [
-       
-        "Web Developer",
-         "Frontend Developer",
-        "Coder",
+        "Full-Stack Developer",
+        "Mobile App Developer", 
+        "Frontend Developer",
+        "Software Engineer",
+        "Flutter Developer"
+        
       ],
       loop: true,
       typeSpeed: 100,
       backSpeed: 80,
       backDelay: 1000,
     });
+
+    // Form validation and submission
+    document.addEventListener('DOMContentLoaded', function() {
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Form elements
+      const form = document.querySelector('.form');
+      const nameInput = document.querySelector('input[name="name"]');
+      const emailInput = document.querySelector('input[name="email"]');
+      const subjectInput = document.querySelector('input[name="subject"]');
+      const messageInput = document.querySelector('textarea[name="message"]');
+      const submitBtn = document.querySelector('#submit-btn');
+
+      // Email validation regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      // Add real-time validation
+      function validateField(field, condition, errorMessage) {
+        const existingError = field.parentNode.querySelector('.error-message');
+        if (existingError) existingError.remove();
+
+        if (!condition) {
+          const errorDiv = document.createElement('div');
+          errorDiv.className = 'error-message';
+          errorDiv.textContent = errorMessage;
+          errorDiv.style.color = '#e84949';
+          errorDiv.style.fontSize = '14px';
+          errorDiv.style.marginTop = '5px';
+          field.parentNode.insertBefore(errorDiv, field.nextSibling);
+          return false;
+        }
+        return true;
+      }
+
+      nameInput.addEventListener('blur', function() {
+        validateField(this, this.value.trim().length >= 2, 'Name must be at least 2 characters long');
+      });
+
+      emailInput.addEventListener('blur', function() {
+        validateField(this, emailRegex.test(this.value), 'Please enter a valid email address');
+      });
+
+      subjectInput.addEventListener('blur', function() {
+        validateField(this, this.value.trim().length >= 5, 'Subject must be at least 5 characters long');
+      });
+
+      messageInput.addEventListener('blur', function() {
+        validateField(this, this.value.trim().length >= 10, 'Message must be at least 10 characters long');
+      });
+
+      // Form submission
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Clear previous errors
+        document.querySelectorAll('.error-message').forEach(error => error.remove());
+
+        // Validate all fields
+        const isNameValid = validateField(nameInput, nameInput.value.trim().length >= 2, 'Name must be at least 2 characters long');
+        const isEmailValid = validateField(emailInput, emailRegex.test(emailInput.value), 'Please enter a valid email address');
+        const isSubjectValid = validateField(subjectInput, subjectInput.value.trim().length >= 5, 'Subject must be at least 5 characters long');
+        const isMessageValid = validateField(messageInput, messageInput.value.trim().length >= 10, 'Message must be at least 10 characters long');
+
+        if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
+          // Show loading state
+        //   const originalText = submitBtn.innerHTML;
+        //   submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+        //   submitBtn.disabled = true;
+
+          // Prepare form data
+          const formData = {
+            name: nameInput.value.trim(),
+            email: emailInput.value.trim(),
+            subject: subjectInput.value.trim(),
+            message: messageInput.value.trim()
+          };
+
+          // Send to backend
+          fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.success) {
+              // Show success message
+              submitBtn.innerHTML = 'Message Sent! ✓';
+              submitBtn.style.backgroundColor = '#4CAF50';
+              
+              // Show success notification
+              showNotification('Thank you! Your message has been sent successfully.', 'success');
+              
+              // Reset form after 3 seconds
+              setTimeout(() => {
+                form.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.backgroundColor = '';
+                submitBtn.disabled = false;
+              }, 3000);
+            } else {
+              throw new Error(data.message || 'Failed to send message');
+            }
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            
+            // Show error message
+            submitBtn.innerHTML = 'Failed to Send ✗';
+            submitBtn.style.backgroundColor = '#f44336';
+            
+            showNotification('Failed to send message. Please try again or contact me directly.', 'error');
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+              submitBtn.innerHTML = originalText;
+              submitBtn.style.backgroundColor = '';
+              submitBtn.disabled = false;
+            }, 3000);
+          });
+          
+        } else {
+          // Scroll to first error
+          const firstError = document.querySelector('.error-message');
+          if (firstError) {
+            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      });
+
+      // Notification system
+      function showNotification(message, type = 'info') {
+        // Remove existing notifications
+        const existing = document.querySelector('.notification');
+        if (existing) existing.remove();
+
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `notification notification-${type}`;
+        notification.innerHTML = `
+          <div class="notification-content">
+            <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-times-circle' : 'fa-info-circle'}"></i>
+            <span>${message}</span>
+            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">×</button>
+          </div>
+        `;
+
+        // Add to page
+        document.body.appendChild(notification);
+
+        // Auto remove after 5 seconds
+        setTimeout(() => {
+          if (notification.parentElement) {
+            notification.remove();
+          }
+        }, 5000);
+
+        // Animate in
+        setTimeout(() => {
+          notification.classList.add('show');
+        }, 100);
+      }
+    });
+
+    // Hire Me Modal Functions
+    function openHireModal() {
+        document.getElementById('hireModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeHireModal() {
+        document.getElementById('hireModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Resume Functions
+    function downloadResume() {
+        const link = document.createElement('a');
+        link.href = './resume.pdf';
+        link.download = 'Lakshya_Khetan_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    function viewResume() {
+        // Open resume in new tab
+        window.open('./resume.pdf', '_blank');
+    }
+
+    // Project Modal Functions
+    function openProjectModal(projectId) {
+        document.getElementById(projectId + '-modal').style.display = 'flex';
+    }
+
+    function closeProjectModal(projectId) {
+        document.getElementById(projectId + '-modal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+        const hireModal = document.getElementById('hireModal');
+        const travelPlannerModal = document.getElementById('travel-planner-modal');
+        const wismeModal = document.getElementById('wisme-ai-modal');
+        
+        if (event.target === hireModal) {
+            closeHireModal();
+        } else if (event.target === travelPlannerModal) {
+            closeProjectModal('travel-planner');
+        } else if (event.target === wismeModal) {
+            closeProjectModal('wisme-ai');
+        }
+    }
   </script>
 </body>
 </html>
