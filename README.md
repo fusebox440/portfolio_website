@@ -10,13 +10,14 @@ Lakshya Khetan
 
 Connect with me:
 - GitHub: [@fusebox440](https://github.com/fusebox440)
-- LinkedIn: [Lakshya Khetan](https://linkedin.com/in/lakshya-khetan)
-- Email: lakshya.khetan@example.com
+- LinkedIn: 
+- Email: lakshyakhetan00@gmail.com
 
 ---
 
 **Made with ❤️ by Lakshya Khetan**
 
 *Ready to join the top 1% of tech companies!*
+
 
 
