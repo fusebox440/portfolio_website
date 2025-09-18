@@ -1,21 +1,5 @@
 ﻿Lakshya Khetan - Professional Portfolio Website
- 📁 Project Structure
-portfolio_website/
-├── index.html              # Main HTML file
-├── styles.css              # CSS styles
-├── server.js               # Express.js server
-├── package.json            # Node.js dependencies
-├── example.env             # Environment variables template
-├── images/                 # Image assets
-│   ├── travel-planner.jpg  # Project images
-│   ├── 0-1.webp
-│   └── ...
-├── logo.jpg                # Logo image
-├── my photo.jpg            # Profile photo
-└── README.md               # This file
-```
-
-👨‍💻 About the Developer
+ 👨‍💻 About the Developer
 
 Lakshya Khetan
 - 🎓 Computer Science Student at VIT Vellore
@@ -24,14 +8,15 @@ Lakshya Khetan
 - 💻 Passionate about AI/ML, Web Development, and Mobile Apps
 - 🌟 Active in NGO work and community service
 
-### Connect with me:
-- **GitHub**: [@fusebox440](https://github.com/fusebox440)
-- **LinkedIn**: [Lakshya Khetan](https://linkedin.com/in/lakshya-khetan)
-- **Email**: lakshya.khetan@example.com
+Connect with me:
+- GitHub: [@fusebox440](https://github.com/fusebox440)
+- LinkedIn: [Lakshya Khetan](https://linkedin.com/in/lakshya-khetan)
+- Email: lakshya.khetan@example.com
 
 ---
 
 **Made with ❤️ by Lakshya Khetan**
 
 *Ready to join the top 1% of tech companies!*
+
 
