@@ -7,7 +7,10 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "echo 'No build process needed for static files'",
-    "test": "echo 'Tests will be added'"
+    "test": "echo 'Tests will be added'",
+    "postinstall": "echo 'Installation complete. Run npm start to launch the server.'",
+    "lint": "echo 'Linting will be added in future versions'",
+    "deploy": "echo 'Follow DEPLOYMENT_CHECKLIST.md for deployment instructions'"
   },
   "keywords": [
     "portfolio",

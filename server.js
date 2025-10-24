@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
 // Email configuration
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: process.env.EMAIL_USER || 'your-email@gmail.com',
@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransporter({
 
 // Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'index_new.html'));
 });
 
 // Contact form endpoint
@@ -51,7 +51,7 @@ app.post('/api/contact', async (req, res) => {
         // Email content
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.CONTACT_EMAIL || 'lakshya.khetan@example.com',
+            to: process.env.CONTACT_EMAIL || 'lakshyakhetan00@gmail.com',
             subject: `Portfolio Contact: ${subject}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -125,7 +125,6 @@ app.post('/api/contact', async (req, res) => {
                                 Connect with me:
                             </p>
                             <div style="margin-top: 10px;">
-                                <a href="https://linkedin.com/in/lakshya-khetan" style="color: #e84949; text-decoration: none; margin: 0 10px;">LinkedIn</a>
                                 <a href="https://github.com/fusebox440" style="color: #e84949; text-decoration: none; margin: 0 10px;">GitHub</a>
                             </div>
                         </div>
@@ -159,10 +158,25 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', message: 'Server is running' });
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-    console.log(`Visit: http://localhost:${PORT}`);
-});
+// Start server with port-fallback logic
+function startServer(port, attempts = 0) {
+    const server = app.listen(port, () => {
+        console.log(`Server is running on port ${port}`);
+        console.log(`Visit: http://localhost:${port}`);
+    });
+
+    server.on('error', (err) => {
+        if (err.code === 'EADDRINUSE' && attempts < 5) {
+            const nextPort = port + 1;
+            console.warn(`Port ${port} in use, trying ${nextPort}...`);
+            setTimeout(() => startServer(nextPort, attempts + 1), 500);
+        } else {
+            console.error('Failed to start server:', err);
+            process.exit(1);
+        }
+    });
+}
+
+startServer(PORT);
 
 module.exports = app;
