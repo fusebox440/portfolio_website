@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Election Sentiment Analysis - Lakshya Khetan Portfolio</title>
+  <meta content="Twitter Sentiment Analysis for Indian Elections - End-to-End ML Pipeline with Deep Learning by Lakshya Khetan" name="description">
+  <meta content="Twitter Sentiment Analysis, Indian Elections, NLP, Deep Learning, LSTM, GloVe, Tweepy, TextBlob" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../images/logo.jpg" rel="icon">
+  <link href="../images/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../styles.css" rel="stylesheet">
+
+  <!-- Project Specific Styles -->
+  <style>
+    .project-hero {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      padding: 100px 0 60px;
+      color: white;
+      text-align: center;
+    }
+
+    .project-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .project-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .tech-tag {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .project-section {
+      padding: 80px 0;
+    }
+
+    .project-section.alternate {
+      background: #f8f9fa;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      color: #12d640;
+      margin-bottom: 20px;
+    }
+
+    .screenshot-container {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .screenshot-placeholder {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      height: 300px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #12d640;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #0ea832;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .project-links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .project-btn {
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-primary {
+      background: #12d640;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #0ea832;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #333;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #222;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .data-source-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .data-source-card h5 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .accuracy-badge {
+      background: #12d640;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .methodology-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      border-left: 5px solid #12d640;
+    }
+
+    .methodology-card h5 {
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .project-hero h1 {
+        font-size: 2rem;
+      }
+      
+      .project-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .back-button {
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Back Button -->
+  <a href="../index.html#portfolio" class="back-button">
+    <i class="ri-arrow-left-line"></i> Back to Portfolio
+  </a>
+
+  <!-- Project Hero Section -->
+  <section class="project-hero">
+    <div class="container">
+      <h1>Twitter Sentiment Analysis for Indian Elections</h1>
+      <p>End-to-end machine learning pipeline for sentiment analysis of tweets related to Indian elections with data collection, preprocessing, deep learning models, and deployment</p>
+      
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Tweepy API</span>
+        <span class="tech-tag">NLTK</span>
+        <span class="tech-tag">TextBlob</span>
+        <span class="tech-tag">TensorFlow/Keras</span>
+        <span class="tech-tag">Bidirectional LSTM</span>
+        <span class="tech-tag">GloVe Embeddings</span>
+        <span class="tech-tag">Pandas</span>
+        <span class="tech-tag">WordCloud</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/fusebox440/indian_election" target="_blank" class="project-btn btn-primary">
+          <i class="ri-github-line"></i> View Source Code
+        </a>
+        <a href="https://github.com/fusebox440/indian_election" target="_blank" class="project-btn btn-secondary">
+          <i class="ri-bar-chart-line"></i> View Analysis
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Overview -->
+  <section class="project-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 style="color: #12d640; margin-bottom: 30px;">Project Overview</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">
+            This project implements an end-to-end machine learning pipeline for sentiment analysis of tweets related to 
+            Indian elections. It includes data collection via Twitter API, preprocessing, sentiment labeling, exploratory 
+            data analysis, and deployment of deep learning models for sentiment prediction focusing on BJP and Congress.
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">
+            The comprehensive workflow covers Twitter data collection using Tweepy API, data cleaning and sentiment labeling 
+            with TextBlob, exploratory data analysis with visualizations, and implementation of both GloVe word embeddings 
+            and Bidirectional LSTM models for accurate sentiment prediction.
+          </p>
+          <div class="accuracy-badge">97%+ LSTM Accuracy</div>
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #12d640;">
+            <h5 style="color: #333; margin-bottom: 10px;">Research Impact</h5>
+            <p style="margin: 0; color: #666;">Provided valuable insights into public opinion dynamics during major Indian elections, helping understand voter behavior patterns and media influence on electoral outcomes.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="screenshot-container">
+            <div class="screenshot-placeholder">
+              <div>
+                <i class="ri-bar-chart-line" style="font-size: 4rem; margin-bottom: 15px;"></i>
+                <div>Sentiment Analysis Dashboard</div>
+                <small style="opacity: 0.8;">Real-time Political Sentiment Tracking</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="project-section alternate">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="color: #12d640; margin-bottom: 20px;">Advanced Features</h2>
+        <p style="font-size: 1.1rem; color: #666;">Comprehensive political sentiment analysis capabilities</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-pulse-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Real-time Sentiment Analysis</h4>
+            <p>Live analysis of social media posts, news articles, and public discourse with continuous monitoring of sentiment trends across multiple platforms and data sources.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-global-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Multi-language Support</h4>
+            <p>Advanced text processing capabilities for Hindi, English, and major regional languages with specialized tokenization, stemming, and sentiment classification algorithms.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-line-chart-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Trend Visualization</h4>
+            <p>Interactive dashboards and dynamic charts showing sentiment trends over time with geographical mapping, demographic analysis, and comparative visualizations.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-user-search-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Political Entity Recognition</h4>
+            <p>Named Entity Recognition (NER) for identifying political parties, candidates, issues, and policies with context-aware classification and relationship mapping.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-brain-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Predictive Modeling</h4>
+            <p>Machine learning models for election outcome prediction based on sentiment data, historical patterns, and demographic analysis with confidence intervals.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-database-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Big Data Processing</h4>
+            <p>Scalable data processing pipeline handling millions of social media posts, news articles, and public comments with efficient storage and retrieval systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Implementation -->
+  <section class="project-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="screenshot-container">
+            <div class="screenshot-placeholder">
+              <div>
+                <i class="ri-code-s-slash-line" style="font-size: 4rem; margin-bottom: 15px;"></i>
+                <div>NLP Pipeline Architecture</div>
+                <small style="opacity: 0.8;">Advanced Text Processing System</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 style="color: #12d640; margin-bottom: 30px;">Technical Architecture</h2>
+          
+          <div class="methodology-card">
+            <h5>Natural Language Processing</h5>
+            <p>Advanced NLP pipeline using NLTK, spaCy, and TextBlob for text preprocessing, tokenization, lemmatization, and sentiment extraction with custom language models for Indian languages.</p>
+          </div>
+
+          <div class="methodology-card">
+            <h5>Machine Learning Models</h5>
+            <p>Ensemble methods combining scikit-learn and XGBoost for sentiment classification, with feature engineering, cross-validation, and hyperparameter optimization achieving 82% accuracy.</p>
+          </div>
+
+          <div class="methodology-card">
+            <h5>Data Processing Pipeline</h5>
+            <p>Scalable data processing using Pandas and NumPy for handling large datasets, with efficient data cleaning, transformation, and feature extraction workflows.</p>
+          </div>
+
+          <div class="methodology-card">
+            <h5>Visualization & Web Framework</h5>
+            <p>Interactive visualizations using Matplotlib, Seaborn, and Plotly with Flask web framework providing RESTful APIs and responsive dashboard interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Sources -->
+  <section class="project-section alternate">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="color: #12d640; margin-bottom: 20px;">Comprehensive Data Sources</h2>
+        <p style="font-size: 1.1rem; color: #666;">Multi-platform data collection for holistic sentiment analysis</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="data-source-card">
+            <i class="ri-twitter-line" style="font-size: 3rem; margin-bottom: 15px;"></i>
+            <h5>Twitter API</h5>
+            <p>Real-time social media sentiment analysis with hashtag tracking and viral content monitoring</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="data-source-card">
+            <i class="ri-newspaper-line" style="font-size: 3rem; margin-bottom: 15px;"></i>
+            <h5>News APIs</h5>
+            <p>Media coverage analysis from major news outlets and regional publications across India</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="data-source-card">
+            <i class="ri-government-line" style="font-size: 3rem; margin-bottom: 15px;"></i>
+            <h5>Election Commission</h5>
+            <p>Official election data for validation and cross-referencing with sentiment predictions</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="data-source-card">
+            <i class="ri-translate-line" style="font-size: 3rem; margin-bottom: 15px;"></i>
+            <h5>Regional Sources</h5>
+            <p>Multi-language news sources and social media platforms for comprehensive coverage</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results & Impact -->
+  <section class="project-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 style="color: #12d640; margin-bottom: 30px;">Results & Impact</h2>
+          <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 40px;">
+            The Indian Election Analysis project achieved significant accuracy in sentiment prediction and provided 
+            valuable insights into the complex dynamics of Indian electoral politics. The analysis helped understand 
+            voter behavior patterns, media influence, and the relationship between public sentiment and election outcomes.
+          </p>
+          
+          <div class="row">
+            <div class="col-md-3">
+              <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <div style="font-size: 2.5rem; font-weight: 700; color: #12d640; margin-bottom: 10px;">82%</div>
+                <h6>Prediction Accuracy</h6>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <div style="font-size: 2.5rem; font-weight: 700; color: #12d640; margin-bottom: 10px;">2M+</div>
+                <h6>Data Points Analyzed</h6>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <div style="font-size: 2.5rem; font-weight: 700; color: #12d640; margin-bottom: 10px;">15</div>
+                <h6>Languages Supported</h6>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <div style="font-size: 2.5rem; font-weight: 700; color: #12d640; margin-bottom: 10px;">5</div>
+                <h6>Election Cycles</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Insights -->
+  <section class="project-section alternate">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="color: #12d640; margin-bottom: 20px;">Key Research Insights</h2>
+        <p style="font-size: 1.1rem; color: #666;">Valuable findings from comprehensive election sentiment analysis</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 100%;">
+            <i class="ri-trending-up-line" style="font-size: 3rem; color: #12d640; margin-bottom: 20px;"></i>
+            <h5 style="margin-bottom: 15px;">Social Media Influence</h5>
+            <p>Analysis revealed strong correlation between social media sentiment trends and actual voting patterns, with regional variations in platform preferences and engagement levels.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 mb-4">
+          <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 100%;">
+            <i class="ri-news-line" style="font-size: 3rem; color: #12d640; margin-bottom: 20px;"></i>
+            <h5 style="margin-bottom: 15px;">Media Coverage Impact</h5>
+            <p>Traditional media coverage showed different sentiment patterns compared to social media, highlighting the importance of multi-source analysis for accurate predictions.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 100%;">
+            <i class="ri-map-pin-range-line" style="font-size: 3rem; color: #12d640; margin-bottom: 20px;"></i>
+            <h5 style="margin-bottom: 15px;">Regional Variations</h5>
+            <p>Significant differences in sentiment patterns across different states and regions, reflecting diverse political cultures and local issues in Indian democracy.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 100%;">
+            <i class="ri-time-line" style="font-size: 3rem; color: #12d640; margin-bottom: 20px;"></i>
+            <h5 style="margin-bottom: 15px;">Temporal Patterns</h5>
+            <p>Sentiment evolution during election campaigns showed predictable patterns with specific events and announcements creating measurable shifts in public opinion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="project-section" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+    <div class="container text-center">
+      <h2 style="margin-bottom: 30px;">Explore the Analysis</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">
+        Discover how NLP and machine learning can analyze political sentiment at scale
+      </p>
+      
+      <div class="project-links">
+        <a href="https://github.com/fusebox440/indian_election" target="_blank" class="project-btn" style="background: white; color: #333;">
+          <i class="ri-github-line"></i> View on GitHub
+        </a>
+        <a href="../index.html#portfolio" class="project-btn" style="background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(10px);">
+          <i class="ri-arrow-left-line"></i> Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

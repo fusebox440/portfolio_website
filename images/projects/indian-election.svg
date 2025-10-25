@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="100%" height="100%" fill="#12263a" />
+  <g fill="#ffc107" font-family="Poppins, sans-serif" font-weight="700">
+    <text x="50%" y="50%" text-anchor="middle" font-size="48">Indian Election Analysis</text>
+    <text x="50%" y="64%" text-anchor="middle" font-size="22" fill="#f7e7b5">Twitter NLP • Sentiment</text>
+  </g>
+</svg>

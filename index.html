@@ -1,944 +1,879 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lakshya Khetan - Software Developer, Frontend Developer, and AI/ML enthusiast. Portfolio showcasing projects in web development, machine learning, and more.">
-    <meta name="keywords" content="Lakshya Khetan, Software Developer, Web Developer, Frontend Developer, AI ML, Portfolio, JavaScript, React, Node.js, Python, VIT Vellore">
-    <meta name="author" content="Lakshya Khetan">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Lakshya Khetan - Software Developer Portfolio">
-    <meta property="og:description" content="Explore the portfolio of Lakshya Khetan, a passionate software developer specializing in frontend development and AI/ML technologies.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="my photo.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lakshya Khetan - Software Developer Portfolio">
-    <meta name="twitter:description" content="Portfolio of Lakshya Khetan showcasing web development projects and technical skills.">
-    <title>Lakshya Khetan - Software Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="project-modal.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="msapplication-TileColor" content="#0f172a">
+  
+  <title>Lakshya Khetan - Full Stack Developer & ML Engineer Portfolio</title>
+  <meta name="description" content="Lakshya Khetan - Experienced Full Stack Developer and Machine Learning Engineer specializing in Python, AI/ML, web development, and data science. View my projects including travel planners, ML portfolios, and research applications.">
+  <meta name="keywords" content="Lakshya Khetan, Full Stack Developer, Machine Learning Engineer, Python Developer, AI/ML, Data Science, Web Development, Portfolio, VIT Vellore">
+  <meta name="author" content="Lakshya Khetan">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fusebox440.github.io/portfolio_website/">
+  <meta property="og:title" content="Lakshya Khetan - Full Stack Developer & ML Engineer">
+  <meta property="og:description" content="Experienced developer specializing in Python, AI/ML, and web development. Explore my projects and professional experience.">
+  <meta property="og:image" content="https://fusebox440.github.io/portfolio_website/images/profile.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://fusebox440.github.io/portfolio_website/">
+  <meta property="twitter:title" content="Lakshya Khetan - Full Stack Developer & ML Engineer">
+  <meta property="twitter:description" content="Experienced developer specializing in Python, AI/ML, and web development. Explore my projects and professional experience.">
+  <meta property="twitter:image" content="https://fusebox440.github.io/portfolio_website/images/profile.jpg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="wrapper">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
+      <h1><a href="index.html">Lakshya Khetan</a></h1>
+      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header"> <span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#education"> <span>Education</span></a></li>
+          <li><a href="#certifications"> <span>Certifications</span></a></li>
+          <li><a href="#experience"> <span>Experience</span></a></li>
+          <li><a href="#portfolio"> <span>Projects</span></a></li>
+          <li><a href="#skills"> <span>Skills</span></a></li>
+          <li><a href="#resume"> <span>Resume</span></a></li>
+          <li><a href="#contact"> <span>Contact</span></a></li>
+        </ul>
+      </nav>
 
-        <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/fusebox440" target="_blank"><i class="ri-github-fill"></i></a>
+        <a href="mailto:lakshyakhetan00@gmail.com"><i class="ri-mail-fill"></i></a>
+      </div>
+    </div>
+  </header><!-- End Header -->
 
-            <nav class="navbar">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Discover my journey, passions, and what drives me</p>
+      </div>
 
-                <div class="logo-container">
-                    <img src="logo.jpg" class="logo" alt="Lakshya Khetan Logo">
-                    <div class="logo-text">akshya Khetan</div>
-                </div>
-
-                <div class="nav-items">
-                    <div><a href="#about">About</a></div>
-                    <div><a href="#experience">Experience</a></div>
-                    <div><a href="#projects">Projects</a></div>
-                   
-                    <div><a href="#achievements">Achievements</a></div>
-                    <div><a href="#resume">Resume</a></div>
-                    <div><a href="#contactme">Contact</a></div>
-                </div>
-            </nav>
-            <main class="hero-section">
-                <div class="absolute faded-text">LAKSHYA KHETAN</div>
-                <div class="hero-section-left">
-                    <div class="hero-section-heading">Hi!! Lakshya Khetan </div>
-                    <div class="hero-section-heading hero-section-sub-heading">
-                        I am a <span class="role"> </span>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="images/profile.jpg" class="img-fluid" alt="" style="border-radius: 10px;">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content">
+          <div class="about-me">
+            <div class="content">
+              <h3>Machine Learning Engineer & Tech Enthusiast</h3>
+              <p>
+                Passionate and enthusiastic developer with a keen interest in software development
+                and artificial intelligence. Beyond coding, I'm deeply involved in community service 
+                through NGO club activities, where I contribute to social causes and organize 
+                volunteer initiatives. As a Radio Jockey, I've honed my communication skills and 
+                connect with diverse audiences through engaging content and music curation.
+              </p>
+              <p>
+                I'm an avid reader with a particular interest in technology, philosophy, and personal 
+                development books. This reading habit not only expands my knowledge but also fuels 
+                my creativity in problem-solving and innovation. I am a passionate individual who 
+                thrives to build meaningful applications and contribute to open-source projects.
+              </p>
+              
+              <!-- Interests Section -->
+              <div class="interests-section" style="margin-top: 30px;">
+                <h4 style="color: #12d640; margin-bottom: 20px;">My Interests & Passions</h4>
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-code-s-slash-line" style="color: #ffbb2c; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">Software Development</span>
                     </div>
-    
-                    <div class="hero-section-description">
-                        I'm a software developer and here is my portfolio website. Here you'll 
-                        learn about my journey as a software developer. 
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-radio-line" style="color: #5578ff; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">Radio Jockey</span>
                     </div>
-    
-    
-                    <div class="btn-pink" id="btn" onclick="openHireModal()">Hire me</div> 
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-heart-line" style="color: #e80368; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">NGO & Social Work</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-book-open-line" style="color: #e361ff; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">Reading & Literature</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-brain-line" style="color: #28a745; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">Machine Learning</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-music-line" style="color: #f1081f; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">Music & Entertainment</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-team-line" style="color: #47aeff; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">Community Building</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="interest-item">
+                      <i class="ri-lightbulb-line" style="color: #ffc107; font-size: 24px;"></i>
+                      <span style="margin-left: 10px; color: #fff;">Innovation & Tech</span>
+                    </div>
+                  </div>
                 </div>
-                 <div class="hero-section-right">
-                    <div class="user-image">
-                        <img src="my photo.jpg" alt="Lakshya Khetan Profile Photo"/>
+              </div>
+              
+              <div class="row" style="margin-top: 30px;">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="ri-check-double-line"></i> <strong>Name:</strong> Lakshya Khetan</li>
+                    <li><i class="ri-check-double-line"></i> <strong>Date of Birth:</strong> 23 July 2003</li>
+                    <li><i class="ri-check-double-line"></i> <strong>Phone:</strong> +91 7903350761</li>
+                    <li><i class="ri-check-double-line"></i> <strong>City:</strong> Vellore, Tamil Nadu</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="ri-check-double-line"></i> <strong>Age:</strong> 22</li>
+                    <li><i class="ri-check-double-line"></i> <strong>Degree:</strong> B.Tech CSE</li>
+                    <li><i class="ri-check-double-line"></i> <strong>Email:</strong> lakshyakhetan00@gmail.com</li>
+                    <li><i class="ri-check-double-line"></i> <strong>Freelance:</strong> Available</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+
+
+  <!-- ======= Education Section ======= -->
+  <section id="education" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="timeline-container">
+            
+            <!-- Bachelor's Degree -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="education-card">
+                  <div class="education-header">
+                    <img src="images/education/vit.jpg" class="education-logo" alt="VIT Vellore">
+                    <div class="education-info">
+                      <h4>Bachelor of Technology - Computer Science and Engineering</h4>
+                      <h5 class="institution">VIT Vellore</h5>
+                      <span class="duration">July 2022 - Present</span>
                     </div>
-    
-                 </div>
-    
-            </main>
+                  </div>
+                  <div class="coursework">
+                    <h6>Relevant Coursework:</h6>
+                    <div class="course-tags">
+                      <span class="course-tag">Data Structures & Algorithms</span>
+                      <span class="course-tag">Web Development</span>
+                      <span class="course-tag">Database Management Systems</span>
+                      <span class="course-tag">Machine Learning</span>
+                      <span class="course-tag">Mobile App Development</span>
+                      <span class="course-tag">Software Engineering</span>
+                      <span class="course-tag">Data Science</span>
+                      <span class="course-tag">Big Data Analytics</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Higher Secondary -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="education-card">
+                  <div class="education-header">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-info">
+                      <h4>Higher Secondary Certificate (XII) - Science</h4>
+                      <h5 class="institution">TRIDENT PUBLIC SCHOOL H MANIYARI MUZAFFARPUR BR</h5>
+                      <span class="duration">2022</span>
+                      <span class="grade">CBSE | 78.4%</span>
+                    </div>
+                  </div>
+                  <div class="subjects">
+                    <h6>Major Subjects:</h6>
+                    <div class="subject-list">
+                      <span class="subject">Physics</span>
+                      <span class="subject">Chemistry</span>
+                      <span class="subject">Mathematics</span>
+                      <span class="subject">Computer Science</span>
+                      <span class="subject">English</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Secondary School -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="education-card">
+                  <div class="education-header">
+                    <div class="education-icon">📚</div>
+                    <div class="education-info">
+                      <h4>Secondary School Certificate (X)</h4>
+                      <h5 class="institution">G D MOTHER INTNL SCHOOL MUZAFFARPUR BIHAR</h5>
+                      <span class="duration">2020</span>
+                      <span class="grade">CBSE | 89.3%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Education Section -->
+
+  <!-- ======= Certifications Section ======= -->
+  <section id="certifications" class="services" style="background: #0b1426;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Certifications</h2>
+        <p>Professional Certifications & Achievements</p>
+      </div>
+      <div class="row justify-content-center">
+        
+        <div class="col-lg-8 col-md-10 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="certification-card">
+            <div class="cert-icon">
+              <i class="bx bxl-java" style="color: #f89820;"></i>
+            </div>
+            <h4><a href="https://drive.google.com/file/d/1PCmKA3-6tDk6W3vb6MSLY4mkYPaugO08/view" target="_blank">Oracle Certified Professional: Java SE 17 Developer</a></h4>
+            <p><strong>Oracle Corporation</strong> • July 2025</p>
+            <ul>
+              <li>Java SE 17 programming fundamentals and object-oriented concepts</li>
+              <li>Exception handling, collections framework, and generics</li>
+              <li>Functional programming with lambda expressions and streams</li>
+              <li>Multithreading, concurrency, and modular programming</li>
+              <li>Input/output operations and file handling</li>
+              <li>Database connectivity with JDBC</li>
+            </ul>
+            <div class="cert-badge" style="text-align: center; margin-top: 20px;">
+              <span style="background: linear-gradient(135deg, #f89820, #ff6b35); color: white; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: bold;">
+                <i class="ri-verified-badge-line"></i> Verified Certification
+              </span>
+            </div>
+          </div>
         </div>
 
-        <!-- About Section -->
-        <section id="about" class="about-section fade-in">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-left">
-                        <h2 class="section-heading">About <span class="highlight">Me</span></h2>
-                        <div class="about-text">
-                            <p>
-                                I'm Lakshya Khetan, a passionate <strong>Software Engineer</strong> and <strong>Frontend Developer</strong> 
-                                currently pursuing my degree at VIT Vellore. With expertise spanning web development, 
-                                mobile app development, and data science, I thrive on building innovative solutions 
-                                that make a real impact.
-                            </p>
-                            <p>
-                                As a <strong>Senior Radio Jockey at VIT Community Radio (VCR)</strong>, I've honed my 
-                                communication skills while leading and mentoring junior team members. My technical 
-                                journey includes developing frontend web applications, mobile apps with Flutter, 
-                                and AI/ML projects that solve real-world problems.
-                            </p>
-                            <p>
-                                Beyond coding, I'm actively involved in <strong>NGO work</strong>, teaching underprivileged 
-                                children, and contributing to open-source projects. I believe in continuous learning 
-                                and am always eager to take on challenging projects that push the boundaries of technology.
-                            </p>
-                        </div>
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">5+</span>
-                                <span class="stat-label">Projects Completed</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">Fresher</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">25+</span>
-                                <span class="stat-label">GitHub Contributions</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-right">
-                        <div class="about-skills-grid">
-                            <div class="skill-category">
-                                <h3>Languages</h3>
-                                <div class="skills-list">
-                                    <span class="skill-tag">Java</span>
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">C++</span>
-                                    <span class="skill-tag">Dart</span>
-                                    <span class="skill-tag">SQL</span>
-                                    <span class="skill-tag">HTML</span>
-                                    <span class="skill-tag">CSS</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h3> Technologies/Frameworks</h3>
-                                <div class="skills-list">
-                                    <span class="skill-tag">Flutter</span>
-                                    <span class="skill-tag">React</span>
-                                    <span class="skill-tag">AWS</span>
-                                    <span class="skill-tag"> Node.js</span>
-                                    <span class="skill-tag">Firebase</span>
-                                    <span class="skill-tag">Git</span>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Developer Tools</h3>
-                                <div class="skills-list">
-                                    <span class="skill-tag"> VS Code</span>
-                                    <span class="skill-tag">Android Studio</span>
-                                    <span class="skill-tag"> MySQL</span>
-                                    <span class="skill-tag"> Workbench</span>
-                                    <span class="skill-tag">Postman</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </div>
+  </section>
+  <!-- End Certifications Section -->
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section fade-in">
-            <div class="container">
-                <h2 class="section-heading center">My <span class="highlight">Journey</span></h2>
-                <div class="timeline">
-                    <div class="timeline-item slide-in-left">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">2024 - Present</div>
-                            <h3 class="timeline-title">Senior Radio Jockey</h3>
-                            <h4 class="timeline-company">VIT Community Radio (VCR)</h4>
-                            <p class="timeline-description">
-                                Hosted and produced multiple cultural programs and live talk shows, engaging the university community. 
-                                Mentored and trained a team of 10+ junior RJs in content creation, public speaking, and broadcasting techniques.
-                            </p>
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">Leadership</span>
-                                <span class="timeline-skill">Communication</span>
-                                <span class="timeline-skill">Event Management</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item slide-in-right">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">May 2025 - June 2025</div>
-                            <h3 class="timeline-title">Web Development Intern</h3>
-                            <h4 class="timeline-company">Primus Partners Solutions Private Limited</h4>
-                            <p class="timeline-description">
-                                Engineered the front-end for the Uttarakhand government's 'Pariwar Pehchan Patra' portal, 
-                                developing critical UI components including user registration, help desk logins, and data 
-                                dashboards using React and Tailwind CSS. Developed core user-facing features for the 
-                                companion mobile application using Flutter, building the user authentication flow and 
-                                profile management screens.
-                            </p>
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">React.js</span>
-                                <span class="timeline-skill">Tailwind CSS</span>
-                                <span class="timeline-skill">Flutter</span>
-                                <span class="timeline-skill">Government Portal Development</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item slide-in-left">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">Oct 2024 - Nov 2024</div>
-                            <h3 class="timeline-title">Front-End Developer Intern</h3>
-                            <h4 class="timeline-company">Kalkani</h4>
-                            <p class="timeline-description">
-                                Developed the startup's public-facing website from the ground up using HTML5, CSS3, and 
-                                JavaScript to showcase their core AI surveillance product. Implemented a fully responsive, 
-                                mobile-first design to ensure a seamless user experience across desktops, tablets, and smartphones.
-                            </p>
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">HTML5</span>
-                                <span class="timeline-skill">CSS3</span>
-                                <span class="timeline-skill">JavaScript</span>
-                                <span class="timeline-skill">Responsive Design</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item slide-in-right">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">Feb 2023 - Present</div>
-                            <h3 class="timeline-title">Executive Board Member</h3>
-                            <h4 class="timeline-company">Juvenile Care Club</h4>
-                            <p class="timeline-description">
-                                Led and organized 5+ community outreach events, including 'Each One, Teach One' educational 
-                                sessions, virtual activities for orphans, and fundraising drives for local NGOs. 
-                                Impacted 100+ students across multiple initiatives.
-                            </p>
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">Leadership</span>
-                                <span class="timeline-skill">Community Service</span>
-                                <span class="timeline-skill">Event Management</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="timeline-item slide-in-right">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">2021 - Expected May 2026</div>
-                            <h3 class="timeline-title">Computer Science Student</h3>
-                            <h4 class="timeline-company">VIT Vellore</h4>
-                            <p class="timeline-description">
-                                Pursuing Bachelor of Technology in Computer Science & Engineering at 
-                                Vellore Institute of Technology. Expected graduation in May 2026. 
-                                Actively participating in technical clubs, hackathons, and community activities.
-                            </p>
-                            <div class="timeline-skills">
-                                <span class="timeline-skill">Data Structures</span>
-                                <span class="timeline-skill">Algorithms</span>
-                                <span class="timeline-skill">Machine Learning</span>
-                                <span class="timeline-skill">Software Engineering</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-section fade-in" id="projects">
-            <h2 class="page-header">Projects</h2>
-
-
-            <div class="project-container">
-                <div class="project-card slide-in-left" id="project1">
-                    <div class="project-number project-number-right">01</div>
-                    <div class="project-content project-content-left">
-                        <div class="project-skills-container">
-                            
-                            <i class="fab fa-flutter skills-logo" title="Flutter"></i>
-                            <i class="fab fa-dart skills-logo" title="Dart"></i>
-                            <i class="fas fa-mobile-alt skills-logo" title="Mobile Development"></i>
-                            <i class="fab fa-firebase skills-logo" title="Firebase"></i>
-                            <i class="fas fa-map-marked-alt skills-logo" title="Maps API"></i>
-                            
-
-                        </div>
-                        <h2 class="project-heading">TRAVEL PLANNER</h2>
-
-
-                        <p class="project-subHeading">  
-                            A comprehensive Flutter mobile application for travel planning 
-                            and management. Features include trip planning, itinerary management, 
-                            expense tracking, location services, and real-time collaboration 
-                            with Firebase backend integration.
-                        </p>
-
-
-                        <div class="btn-grp">
-                            <button class="btn-pink btn-project" onclick="openProjectModal('travel-planner')">Read More</button>
-                            <a href="https://github.com/fusebox440/travel_planner" target="_blank">
-                            <i title="GitHub Repository" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="https://github.com/fusebox440/travel_planner" target="_blank">
-                            <i title="View Code" class="fa-solid fa-code icon"></i>
-                            </a>
-                        </div>
-                        
-
-                    </div>
-                </div>
-
-                <div class="project-card slide-in-right" id="project2">
-                    <div class="project-number project-number-left ">02</div>
-                    <div class="project-content project-content-right">
-                        <div class="project-skills-container">
-                            <i class="fab fa-flutter skills-logo" title="Flutter"></i>
-                            <i class="fab fa-dart skills-logo" title="Dart"></i>
-                            <i class="fab fa-firebase skills-logo" title="Firebase"></i>
-                            <i class="fab fa-google skills-logo" title="Google Cloud AI"></i>
-                            <i class="fas fa-brain skills-logo" title="AI/ML"></i>
-                            
-
-                        </div>
-                        <h2 class="project-heading">WISME-AI</h2>
-
-
-                        <p class="project-subHeading">
-                            Conversational Learning App - An AI-powered Flutter app designed to solve low online course 
-                            completion rates by transforming content into engaging, AI-generated audio dialogues.
-                        </p>
-
-                        
-                        <div class="btn-grp">
-                            <button class="btn-pink btn-project" onclick="openProjectModal('wisme-ai')">Read More</button>
-                            <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank">
-                            <i title="GitHub Repository" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank">
-                            <i title="View Code" class="fa-solid fa-code icon"></i>
-                            </a>
-                        </div>
-                        
-
-                    </div>
-                </div>
-
-                
-        
-        
-  
-             
-            
-            
-            
-            
-            
-            
-            
-        
-
-            <!-- Resume Section -->
-            <section id="resume" class="resume-section fade-in">
-                <div class="container">
-                    <h2 class="section-heading center">My <span class="highlight">Resume</span></h2>
-                    <div class="resume-content">
-                        <div class="resume-preview">
-                            <div class="resume-placeholder">
-                                <i class="fas fa-file-pdf resume-icon"></i>
-                                <h3>Lakshya Khetan - Resume</h3>
-                                
-                                <p class="resume-description">
-                                    Download my complete resume to learn more about my experience, 
-                                    projects, and technical skills in detail.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="resume-actions">
-                            <button class="btn-pink resume-download" onclick="downloadResume()">
-                                <i class="fas fa-download"></i>
-                                Download Resume
-                            </button>
-                            <button class="btn-secondary resume-view" onclick="viewResume()">
-                                <i class="fas fa-eye"></i>
-                                View Online
-                            </button>
-                        </div>
-                        <div class="resume-stats">
-                            <div class="resume-stat">
-                                <i class="fas fa-code"></i>
-                                <span>5+ Projects</span>
-                            </div>
-                            <div class="resume-stat">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>VIT Vellore</span>
-                            </div>
-                            
-                            <div class="resume-stat">
-                                <i class="fas fa-briefcase"></i>
-                                <span>Fresher</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Achievements Section -->
-            <section id="achievements" class="achievements-section fade-in">
-                <div class="container">
-                    <h2 class="section-heading center">My <span class="highlight">Achievements</span></h2>
-                    <div class="achievements-grid">
-                        <div class="achievement-card slide-in-left">
-                            <div class="achievement-icon">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                            <h3>Senior Radio Jockey</h3>
-                            <p>VIT Community Radio (VCR)</p>
-                            <span class="achievement-description">
-                                Leading radio programs and mentoring 15+ junior members. 
-                                Hosted 50+ successful shows with high audience engagement.
-                            </span>
-                        </div>
-                        
-                        <div class="achievement-card slide-in-right">
-                            <div class="achievement-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h3>Executive Board Member</h3>
-                            <p>Juvenile Care Club, VIT</p>
-                            <span class="achievement-description">
-                                Active member of the Executive Board, contributing to child welfare initiatives 
-                                and community service programs focused on supporting underprivileged youth.
-                            </span>
-                        </div>
-                        
-                        <div class="achievement-card slide-in-left">
-                            <div class="achievement-icon">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <h3>Oracle Certified Professional</h3>
-                            <p>Java SE 17 Developer</p>
-                            <span class="achievement-description">
-                                Oracle Certified Professional Java SE 17 Developer certification. 
-                                Demonstrated expertise in Java programming, OOP principles, and enterprise development.
-                            </span>
-                        </div>
-                        
-                        <div class="achievement-card slide-in-right">
-                            <div class="achievement-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3>Academic Excellence</h3>
-                            <p>VIT Vellore</p>
-                            <span class="achievement-description">
-                                I have maintained a strong academic record
-                                while actively applying my knowledge through 
-                                projects in front-end, Flutter, and app development.
-                                My consistent performance reflects not only technical 
-                                proficiency but also the ability to translate learning into 
-                                impactful, real-world solutions.
-                            </span>
-                        </div>
-                        
-                        <div class="achievement-card slide-in-left">
-                            <div class="achievement-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h3>App Developer</h3>
-                            <p>Flutter & React Native</p>
-                            <span class="achievement-description">
-                                Developed multiple mobile applications including the 
-                                Travel Planner app with advanced features and UI/UX.
-                            </span>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </section>
-            
-            <section class="contactus-form-container fade-in" id="contactme">
-                <div class="container">
-
-
-                    <h1 class="contactus-heading">Contact Me</h1>
-
-
-                    <h3 class="contactus-sub-heading">Questions, thoughts, or just want to say hello?
-                         </h3>
-
-
-                         <div class="contactus-form-container">
-                            <form class="form" action="">
-                                <div class="formfield-container">
-                                    <input class="formfield"
-                                    type="text"
-                                    name="name"
-                                    id="" 
-                                    placeholder="Lakshya Khetan"/>
-
-                                    <input class="formfield"
-                                    name="email"
-                                    type="email"
-                                    id=""
-                                    placeholder="lakshyakhetan00@gmail.com"/> 
-
-                                    <input class="formfield"
-                                    name="subject"
-                                    type="text"
-                                    id=""
-                                    placeholder=""/>
-                                    
-                                    <textarea name="message"
-                                    id="" cols="30" rows="10"
-                                    class="formfield formfield-textarea"
-                                    placeholder="Ready to work and grow together !! "></textarea> 
-
-
-
-                                </div>
-                                <div>
-                                    <button type="submit" class="btn-pink" id="submit-btn">
-                                        Send Message <i class="Submit-icon fa-solid fa-paper-plane"></i>
-
-                                    </button>
-                                     
-                                   
-                                </div> 
-                            </form>      
-                        
-                                    
-
-                                   
-                                
-
-                    
-                            
-                         </section>
-                </div>
-            </section>
-
-            <footer>
-                <div class="container">
-                    <div class="footer-wrapper">
-                        <div class="footer-faded-text"> Lakshya Khetan</div>
-                        <div class="link-wrapper">
-                            <div>
-                                <a href="#projects">Projects</a>
-                            </div>
-                            <div>
-                                <a href="#achievements">Achievements</a>
-                            </div>
-                            <div>
-                                <a href="#resume">Resume</a>
-                            </div>
-                            <div>
-                                <a href="#contactme">Contact Me</a>
-                            </div>
-                        </div>
-                        <div class="icon-wrapper">
-                            <i class="fa-brands fa-linkedin icon"></i>
-                            <i class="fa-brands fa-github icon"></i>
-                            <i class="fa-brands fa-instagram icon"></i>
-                            <i class="fa-regular fa-envelope icon"></i>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                </div>
-            </footer>
-    
-    <!-- Hire Me Modal -->
-    <div id="hireModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Let's Work Together!</h2>
-                <span class="close" onclick="closeHireModal()">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p>I'm excited to discuss potential opportunities and how I can contribute to your team!</p>
-                <div class="hire-options">
-                    <a href="mailto:lakshyakhetan00@gmail.com?subject=Job Opportunity&body=Hi Lakshya, I'd like to discuss a potential opportunity..." class="hire-btn">
-                        <i class="fas fa-envelope"></i>
-                        Send Email
-                    </a>
-                    <a href="https://linkedin.com/in/lakshya-khetan" target="_blank" class="hire-btn">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/fusebox440" target="_blank" class="hire-btn">
-                        <i class="fab fa-github"></i>
-                        GitHub Profile
-                    </a>
-                </div>
-            </div>
+  <!-- Start Experience Section -->
+  <section id="experience" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="#" style="color:#12d640">Web Development Intern</a><br> </h4>
+            <h5 style="text-align:left;">May 2025 – June 2025</h5>
+            <p style="text-align:left;color:#fff"><em>Primus Partners Solutions Private Limited, New Delhi, India</em></p>
+            <ul style="text-align:left;">
+              <li>Engineered the front-end for the Uttarakhand government's 'Pariwar Pehachan Patra' portal, developing critical UI components including user registration, help desk logins, and data dashboards using React and Tailwind CSS.</li>
+              <li>Developed core user-facing features for the companion mobile application using Flutter, building the user authentication flow and profile management screens.</li>
+              <li>Implemented performance optimizations that improved application load times by 40% and ensured WCAG 2.1 compliance for government accessibility standards.</li>
+            </ul>
+          </div>
+          
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <h4 style="text-align:left;"><a href="#" style="color:#12d640">Front-End Developer Intern</a><br> </h4>
+            <h5 style="text-align:left;">Oct 2024 – Nov 2024</h5>
+            <p style="text-align:left;color:#fff"><em>Kalkani, Vellore, Tamil Nadu</em></p>
+            <ul style="text-align:left;">
+              <li>Developed the startup's public-facing website from the ground up using HTML5, CSS3, and JavaScript to showcase their core AI surveillance product.</li>
+              <li>Implemented a fully responsive, mobile-first design to ensure a seamless user experience across desktops, tablets, and smartphones.</li>
+              <li>Optimized website performance achieving 95+ Google PageSpeed scores through efficient coding practices and modern web technologies.</li>
+            </ul>
+          </div>
+          
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <h4 style="text-align:left;"><a href="#" style="color:#12d640">Senior Radio Jockey (RJ)</a><br> </h4>
+            <h5 style="text-align:left;">Ongoing</h5>
+            <p style="text-align:left;color:#fff"><em>VIT Community Radio, Vellore, Tamil Nadu</em></p>
+            <ul style="text-align:left;">
+              <li>Hosted and produced multiple cultural programs and live talk shows, engaging the university community with diverse content formats.</li>
+              <li>Mentored and trained a team of 10+ junior RJs in content creation, public speaking, and broadcasting techniques.</li>
+              <li>Managed technical aspects of live broadcasts including equipment operation and audio editing for seamless program delivery.</li>
+            </ul>
+          </div>
+          
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <h4 style="text-align:left;"><a href="#" style="color:#12d640">Executive Board Member</a><br> </h4>
+            <h5 style="text-align:left;">Feb 2023 – Present</h5>
+            <p style="text-align:left;color:#fff"><em>Juvenile Care Club, Vellore, Tamil Nadu</em></p>
+            <ul style="text-align:left;">
+              <li>Led and organized 5+ community outreach events, including 'Each One, Teach One' educational sessions, virtual activities for orphans, and fundraising drives for local NGOs.</li>
+              <li>Coordinated cross-functional teams of 25+ volunteers across multiple social impact projects and community initiatives.</li>
+              <li>Successfully raised ₹2+ lakhs through strategic fundraising campaigns for charitable causes and community development programs.</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
+  <!-- End Experience Section -->
 
-    <!-- Project Modals -->
-    <!-- Travel Planner Modal -->
-    <div id="travel-planner-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Travel Planner - Flutter Mobile App</h2>
-                <span class="close" onclick="closeProjectModal('travel-planner')">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div class="project-modal-content">
-                    <h3>Project Overview</h3>
-                    <p>A comprehensive Flutter mobile application for travel planning and management that helps users organize trip itineraries, track expenses, and manage packing lists with Firebase backend integration.</p>
-                    
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>Trip Planning & Itinerary Management</li>
-                        <li>Expense Tracking with Budget Management</li>
-                        <li>Smart Packing Lists</li>
-                        <li>Location Services & Maps Integration</li>
-                        <li>Firebase Firestore for Real-time Data Synchronization</li>
-                        <li>Cross-device Compatibility</li>
-                        <li>Offline Mode Support</li>
-                    </ul>
-                    
-                    <h3>Tech Stack</h3>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Firestore</span>
-                        <span class="tech-tag">Maps API</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/fusebox440/travel_planner" target="_blank" class="btn-pink">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>My Works</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">AI/ML</li>
+            <li data-filter=".filter-web">Web</li>
+            <li data-filter=".filter-project">Mobile</li>
+          </ul>
         </div>
-    </div>
+      </div>
 
-    <!-- Wisme-AI Modal -->
-    <div id="wisme-ai-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Wisme-AI - Conversational Learning App</h2>
-                <span class="close" onclick="closeProjectModal('wisme-ai')">&times;</span>
+      <div class="row portfolio-container">
+        <!-- Travel Planner Project -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+          <div class="animated-project-card" data-project="travel-planner">
+            <div class="card-image">
+              <img src="images/projects/travel-planner.svg" class="img-fluid" alt="Travel Planner App">
+              <div class="card-overlay">
+                <i class="ri-smartphone-line"></i>
+              </div>
             </div>
-            <div class="modal-body">
-                <div class="project-modal-content">
-                    <h3>Project Overview</h3>
-                    <p>Spearheaded the conceptualization of 'Wisme,' an AI-powered app in Flutter designed to solve low online course completion rates by transforming content into engaging, AI-generated audio dialogues.</p>
-                    
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>AI-powered conversational learning system</li>
-                        <li>Audio-first UI/UX design</li>
-                        <li>Firebase authentication and Firestore integration</li>
-                        <li>Real-time analytics system</li>
-                        <li>Proprietary 'Engagement Score' calculation</li>
-                        <li>Product-market fit measurement tools</li>
-                        <li>High-retention learning experience</li>
-                    </ul>
-                    
-                    <h3>Technical Implementation</h3>
-                    <ul>
-                        <li>Engineered full-stack solution using Firebase</li>
-                        <li>Google Cloud AI integration for intelligent conversations</li>
-                        <li>Real-time data synchronization with Firestore</li>
-                        <li>Comprehensive analytics system</li>
-                        <li>User persona-based feature roadmap</li>
-                    </ul>
-                    
-                    <h3>Tech Stack</h3>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Google Cloud AI</span>
-                        <span class="tech-tag">Firestore</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank" class="btn-pink">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
+            <div class="card-content">
+              <h4>Travel Planner App</h4>
+              <p>Flutter • Material Design 3</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Material Design</span>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
 
+        <!-- ML Projects Portfolio -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="animated-project-card" data-project="ml-portfolio">
+            <div class="card-image">
+              <img src="images/projects/ml-portfolio.svg" class="img-fluid" alt="ML Projects Portfolio">
+              <div class="card-overlay">
+                <i class="ri-brain-line"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4>Advanced ML Portfolio</h4>
+              <p>25+ Machine Learning Projects</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">scikit-learn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indian Election Analysis -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="animated-project-card" data-project="indian-election">
+            <div class="card-image">
+              <img src="images/projects/indian-election.svg" class="img-fluid" alt="Indian Election Analysis">
+              <div class="card-overlay">
+                <i class="ri-bar-chart-line"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4>Election Sentiment Analysis</h4>
+              <p>Twitter NLP • Deep Learning</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LSTM</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WisMe Research App -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="animated-project-card" data-project="wisme-ai">
+            <div class="card-image">
+              <img src="images/projects/wisme-ai.svg" class="img-fluid" alt="WisMe Research App">
+              <div class="card-overlay">
+                <i class="ri-research-line"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <h4>WisMe Research Assistant</h4>
+              <p>AI Research Tool • Collaboration</p>
+              <div class="tech-tags">
+                <span class="tech-tag">AI</span>
+                <span class="tech-tag">Research</span>
+                <span class="tech-tag">Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-  <script>
-    var typeData = new Typed(".role", {
-      strings: [
-        "Full-Stack Developer",
-        "Mobile App Developer", 
-        "Frontend Developer",
-        "Software Engineer",
-        "Flutter Developer"
-        
-      ],
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+            <h4 style="text-align:left;color:#09203a">Programming Languages</h4>
+            <p style="text-align:left;">
+              <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" height="50" width="120">
+              <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="50" width="150">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" height="50" width="50">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" height="50" width="50">
+              <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-ar21.svg" alt="Dart" height="50" width="120">
+              <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="SQL" height="50" width="100">
+              <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" height="60" width="90">
+            </p>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+            <h4 style="text-align:left;color:#09203a">Technologies & Frameworks</h4>
+            <p style="text-align:left;">
+              <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg" alt="Flutter" height="50" width="120">
+              <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="React" height="50" width="120">
+              <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="Node.js">
+              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git">
+              <img src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg" alt="Firebase" height="50" width="120">
+            </p>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+            <h4 style="text-align:left;color:#09203a">Developer Tools</h4>
+            <p style="text-align:left;">
+              <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt="VS Code" height="50" width="120">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Android_Studio_Icon_%282014-2019%29.svg" alt="Android Studio" height="50" width="50">
+              <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL Workbench" height="50" width="130">
+              <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="Postman" height="50" width="120">
+            </p>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+            <h4 style="text-align:left;color:#09203a">Data Science & ML Libraries</h4>
+            <p style="text-align:left;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy" height="50" width="120">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas" height="50" width="120">
+              <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow">
+              <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" width="90" height="70">
+            </p>
+          </div>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+            <h4 style="text-align:left;color:#09203a">Data Visualization Tools</h4>
+            <p style="text-align:left;">
+              <span style="display: inline-block; background: #11557c; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; margin-right: 10px; margin-bottom: 5px;">Matplotlib</span>
+              <span style="display: inline-block; background: #4c72b0; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; margin-right: 10px; margin-bottom: 5px;">Seaborn</span>
+              <img src="https://www.vectorlogo.zone/logos/plot_ly/plot_ly-ar21.svg" alt="Plotly" height="50" width="120">
+              <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Skills Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Resume & Links</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <a href="assets/resume/Lakshya_Khetan_Resume.pdf" target="_blank"><div class="icon"><i class="ri-file-download-line"></i></div></a>
+          <h4 class="title"><a href="assets/resume/Lakshya_Khetan_Resume.pdf" target="_blank">Resume</a></h4>
+          <p class="description" style="color:#fff;">Download my latest resume in PDF format</p>
+        </div>
+        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
+          <a href="https://github.com/fusebox440" target="_blank"><div class="icon"><i class="ri-github-fill"></i></div></a>
+          <h4 class="title"><a href="https://github.com/fusebox440" target="_blank">GitHub Profile</a></h4>
+          <p class="description" style="color:#fff;">View all my projects and open source contributions</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="info-box mb-4">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>Vellore, Tamil Nadu, India</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>lakshyakhetan00@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+91 7903350761</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 ">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://github.com/fusebox440" target="_blank"><i class="ri-github-fill"></i></a>
+              <a href="mailto:lakshyakhetan00@gmail.com"><i class="ri-mail-fill"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form action="#" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" defer></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Machine Learning Engineer", "Frontend Developer", "AI Enthusiast", "Radio Jockey"],
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 80,
-      backDelay: 1000,
+      typeSpeed: 65,
+      backSpeed: 65
     });
+  </script>
 
-    // Form validation and submission
+  <!-- Project Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Project Title</h3>
+        <button class="modal-close" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="project-description" id="modalDescription">
+          Project description will be loaded here...
+        </div>
+        <div class="project-features">
+          <h5>Key Features</h5>
+          <ul class="feature-list" id="modalFeatures">
+            <!-- Features will be loaded here -->
+          </ul>
+        </div>
+        <div class="project-tech">
+          <h5>Technologies Used</h5>
+          <div class="modal-tech-tags" id="modalTech">
+            <!-- Tech tags will be loaded here -->
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="#" id="githubLink" class="modal-btn btn-github" target="_blank">
+            <i class="ri-github-line"></i> View on GitHub
+          </a>
+          <a href="#" id="demoLink" class="modal-btn btn-demo" target="_blank">
+            <i class="ri-external-link-line"></i> View Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Project data
+    const projectData = {
+      'travel-planner': {
+        title: 'Travel Planner App',
+        description: 'Professional & Child-Friendly Travel Planning App with comprehensive features including gamification, analytics dashboard, translation system, and full accessibility compliance. Built with Flutter using cutting-edge Material Design 3.',
+        features: [
+          'Gamification system with 8 achievement badges',
+          'Analytics dashboard with interactive FL Chart visualization',
+          'Translation system with LibreTranslate API integration',
+          'Full WCAG 2.1 accessibility compliance',
+          'Material Design 3 with 4 theme modes',
+          'Cross-platform support (iOS, Android, Web, Desktop)',
+          'Enhanced booking system with comprehensive details',
+          'Performance optimizations with 60fps animations'
+        ],
+        tech: ['Flutter 3.0+', 'Dart', 'Material Design 3', 'Hive Database', 'Riverpod', 'Google Maps API', 'FL Chart', 'LibreTranslate API'],
+        github: 'https://github.com/fusebox440/travel_planner',
+        demo: 'projects/travel-planner.html'
+      },
+      'ml-portfolio': {
+        title: 'Advanced ML Portfolio',
+        description: 'Premium machine learning portfolio featuring 25+ enterprise-grade projects across healthcare, finance, real estate, smart cities, and specialized domains with modular architecture and production-ready implementations.',
+        features: [
+          '25+ enterprise-grade ML projects across 6 domains',
+          'Healthcare AI with 93.4% average accuracy',
+          'Financial analytics with 91.4% accuracy',
+          'Real estate models with 0.889 R² score',
+          'Comprehensive EDA and feature engineering',
+          'Advanced visualizations and performance metrics',
+          'Modular architecture with reusable utilities',
+          'Production-ready standardized code structure'
+        ],
+        tech: ['Python 3.8+', 'scikit-learn', 'TensorFlow', 'XGBoost', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Jupyter'],
+        github: 'https://github.com/fusebox440/ML_projects',
+        demo: 'projects/ml-portfolio.html'
+      },
+      'indian-election': {
+        title: 'Election Sentiment Analysis',
+        description: 'End-to-end machine learning pipeline for sentiment analysis of tweets related to Indian elections with data collection, preprocessing, deep learning models, and deployment focusing on BJP and Congress sentiment prediction.',
+        features: [
+          'Twitter data collection using Tweepy API',
+          'Comprehensive data preprocessing and cleaning',
+          'Sentiment labeling with TextBlob integration',
+          'Bidirectional LSTM model with 97%+ accuracy',
+          'GloVe word embeddings implementation',
+          'Interactive data visualizations and WordCloud',
+          'Real-time sentiment prediction system',
+          'Political sentiment analysis for major parties'
+        ],
+        tech: ['Python', 'Tweepy API', 'NLTK', 'TextBlob', 'TensorFlow/Keras', 'Bidirectional LSTM', 'GloVe Embeddings', 'WordCloud'],
+        github: 'https://github.com/fusebox440/indian_election',
+        demo: 'projects/indian-election.html'
+      },
+      'wisme-ai': {
+        title: 'WisMe Research Assistant',
+        description: 'Innovative AI-powered research tool designed to streamline academic and professional research processes. This collaborative project focuses on creating an intelligent assistant for efficient information discovery and analysis.',
+        features: [
+          'AI-powered research assistance',
+          'Intelligent content summarization',
+          'Automated citation management',
+          'Multi-source information discovery',
+          'Research workflow optimization',
+          'Collaborative development approach',
+          'Academic and professional research support',
+          'Enhanced productivity tools'
+        ],
+        tech: ['AI Research Tools', 'Natural Language Processing', 'Information Retrieval', 'Collaborative Development'],
+        github: 'https://github.com/Bhargs24/Wisme_ResearchApp2',
+        demo: 'projects/wisme-ai.html'
+      }
+    };
+
+    // Open modal function
+    function openModal(projectKey) {
+      try {
+        const project = projectData[projectKey];
+        if (!project) {
+          console.warn(`Project '${projectKey}' not found`);
+          return;
+        }
+
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const featuresList = document.getElementById('modalFeatures');
+        
+        if (!modalTitle || !modalDescription || !featuresList) {
+          console.error('Modal elements not found');
+          return;
+        }
+
+        modalTitle.textContent = project.title;
+        modalDescription.textContent = project.description;
+        
+        // Load features
+        featuresList.innerHTML = '';
+        project.features.forEach(feature => {
+          const li = document.createElement('li');
+          li.textContent = feature;
+          featuresList.appendChild(li);
+        });
+      } catch (error) {
+        console.error('Error opening modal:', error);
+      }
+
+        // Load tech tags
+        const techContainer = document.getElementById('modalTech');
+        const githubLink = document.getElementById('githubLink');
+        const demoLink = document.getElementById('demoLink');
+        const projectModal = document.getElementById('projectModal');
+        
+        if (techContainer) {
+          techContainer.innerHTML = '';
+          project.tech.forEach(tech => {
+            const span = document.createElement('span');
+            span.className = 'modal-tech-tag';
+            span.textContent = tech;
+            techContainer.appendChild(span);
+          });
+        }
+
+        // Set links
+        if (githubLink) githubLink.href = project.github;
+        if (demoLink) demoLink.href = project.demo;
+
+        // Show modal
+        if (projectModal) {
+          projectModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+    }
+
+    // Close modal function
+    function closeModal() {
+      try {
+        const projectModal = document.getElementById('projectModal');
+        if (projectModal) {
+          projectModal.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        }
+      } catch (error) {
+        console.error('Error closing modal:', error);
+      }
+    }
+
+    // Add click event listeners to project cards
     document.addEventListener('DOMContentLoaded', function() {
-      // Scroll animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
+      try {
+        const projectCards = document.querySelectorAll('.animated-project-card');
+        projectCards.forEach(card => {
+          card.addEventListener('click', function() {
+            const projectKey = this.getAttribute('data-project');
+            if (projectKey) {
+              openModal(projectKey);
+            }
+          });
+        });
 
-      const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+        // Add image loading error handling
+        const projectImages = document.querySelectorAll('.animated-project-card img');
+        projectImages.forEach(img => {
+          img.addEventListener('error', function() {
+            this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFlMjkzYiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTRhM2I4IiBmb250LWZhbWlseT0iUG9wcGlucywgc2Fucy1zZXJpZiI+UHJvamVjdCBJbWFnZTwvdGV4dD48L3N2Zz4=';
+            this.alt = 'Project Image Placeholder';
+          });
+        });
+      } catch (error) {
+        console.error('Error initializing project cards:', error);
+      }
+
+        // Close modal when clicking outside
+        const projectModal = document.getElementById('projectModal');
+        if (projectModal) {
+          projectModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+              closeModal();
+            }
+          });
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape') {
+            closeModal();
           }
         });
-      }, observerOptions);
-
-      // Observe all animated elements
-      document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
-        observer.observe(el);
-      });
-
-      // Form elements
-      const form = document.querySelector('.form');
-      const nameInput = document.querySelector('input[name="name"]');
-      const emailInput = document.querySelector('input[name="email"]');
-      const subjectInput = document.querySelector('input[name="subject"]');
-      const messageInput = document.querySelector('textarea[name="message"]');
-      const submitBtn = document.querySelector('#submit-btn');
-
-      // Email validation regex
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      // Add real-time validation
-      function validateField(field, condition, errorMessage) {
-        const existingError = field.parentNode.querySelector('.error-message');
-        if (existingError) existingError.remove();
-
-        if (!condition) {
-          const errorDiv = document.createElement('div');
-          errorDiv.className = 'error-message';
-          errorDiv.textContent = errorMessage;
-          errorDiv.style.color = '#e84949';
-          errorDiv.style.fontSize = '14px';
-          errorDiv.style.marginTop = '5px';
-          field.parentNode.insertBefore(errorDiv, field.nextSibling);
-          return false;
-        }
-        return true;
-      }
-
-      nameInput.addEventListener('blur', function() {
-        validateField(this, this.value.trim().length >= 2, 'Name must be at least 2 characters long');
-      });
-
-      emailInput.addEventListener('blur', function() {
-        validateField(this, emailRegex.test(this.value), 'Please enter a valid email address');
-      });
-
-      subjectInput.addEventListener('blur', function() {
-        validateField(this, this.value.trim().length >= 5, 'Subject must be at least 5 characters long');
-      });
-
-      messageInput.addEventListener('blur', function() {
-        validateField(this, this.value.trim().length >= 10, 'Message must be at least 10 characters long');
-      });
-
-      // Form submission
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Clear previous errors
-        document.querySelectorAll('.error-message').forEach(error => error.remove());
-
-        // Validate all fields
-        const isNameValid = validateField(nameInput, nameInput.value.trim().length >= 2, 'Name must be at least 2 characters long');
-        const isEmailValid = validateField(emailInput, emailRegex.test(emailInput.value), 'Please enter a valid email address');
-        const isSubjectValid = validateField(subjectInput, subjectInput.value.trim().length >= 5, 'Subject must be at least 5 characters long');
-        const isMessageValid = validateField(messageInput, messageInput.value.trim().length >= 10, 'Message must be at least 10 characters long');
-
-        if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
-          // Show loading state
-        //   const originalText = submitBtn.innerHTML;
-        //   submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
-        //   submitBtn.disabled = true;
-
-          // Prepare form data
-          const formData = {
-            name: nameInput.value.trim(),
-            email: emailInput.value.trim(),
-            subject: subjectInput.value.trim(),
-            message: messageInput.value.trim()
-          };
-
-          // Send to backend
-          fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-          })
-          .then(response => response.json())
-          .then(data => {
-            if (data.success) {
-              // Show success message
-              submitBtn.innerHTML = 'Message Sent! ✓';
-              submitBtn.style.backgroundColor = '#4CAF50';
-              
-              // Show success notification
-              showNotification('Thank you! Your message has been sent successfully.', 'success');
-              
-              // Reset form after 3 seconds
-              setTimeout(() => {
-                form.reset();
-                submitBtn.innerHTML = originalText;
-                submitBtn.style.backgroundColor = '';
-                submitBtn.disabled = false;
-              }, 3000);
-            } else {
-              throw new Error(data.message || 'Failed to send message');
-            }
-          })
-          .catch(error => {
-            console.error('Error:', error);
-            
-            // Show error message
-            submitBtn.innerHTML = 'Failed to Send ✗';
-            submitBtn.style.backgroundColor = '#f44336';
-            
-            showNotification('Failed to send message. Please try again or contact me directly.', 'error');
-            
-            // Reset button after 3 seconds
-            setTimeout(() => {
-              submitBtn.innerHTML = originalText;
-              submitBtn.style.backgroundColor = '';
-              submitBtn.disabled = false;
-            }, 3000);
-          });
-          
-        } else {
-          // Scroll to first error
-          const firstError = document.querySelector('.error-message');
-          if (firstError) {
-            firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
-        }
-      });
-
-      // Notification system
-      function showNotification(message, type = 'info') {
-        // Remove existing notifications
-        const existing = document.querySelector('.notification');
-        if (existing) existing.remove();
-
-        // Create notification element
-        const notification = document.createElement('div');
-        notification.className = `notification notification-${type}`;
-        notification.innerHTML = `
-          <div class="notification-content">
-            <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-times-circle' : 'fa-info-circle'}"></i>
-            <span>${message}</span>
-            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">×</button>
-          </div>
-        `;
-
-        // Add to page
-        document.body.appendChild(notification);
-
-        // Auto remove after 5 seconds
-        setTimeout(() => {
-          if (notification.parentElement) {
-            notification.remove();
-          }
-        }, 5000);
-
-        // Animate in
-        setTimeout(() => {
-          notification.classList.add('show');
-        }, 100);
-      }
     });
-
-    // Hire Me Modal Functions
-    function openHireModal() {
-        document.getElementById('hireModal').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeHireModal() {
-        document.getElementById('hireModal').style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-
-    // Resume Functions
-    function downloadResume() {
-        const link = document.createElement('a');
-        link.href = './resume.pdf';
-        link.download = 'Lakshya_Khetan_Resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-
-    function viewResume() {
-        // Open resume in new tab
-        window.open('./resume.pdf', '_blank');
-    }
-
-    // Project Modal Functions
-    function openProjectModal(projectId) {
-        document.getElementById(projectId + '-modal').style.display = 'flex';
-    }
-
-    function closeProjectModal(projectId) {
-        document.getElementById(projectId + '-modal').style.display = 'none';
-    }
-
-    // Close modal when clicking outside
-    window.onclick = function(event) {
-        const hireModal = document.getElementById('hireModal');
-        const travelPlannerModal = document.getElementById('travel-planner-modal');
-        const wismeModal = document.getElementById('wisme-ai-modal');
-        
-        if (event.target === hireModal) {
-            closeHireModal();
-        } else if (event.target === travelPlannerModal) {
-            closeProjectModal('travel-planner');
-        } else if (event.target === wismeModal) {
-            closeProjectModal('wisme-ai');
-        }
-    }
   </script>
+
 </body>
 </html>
-
-
-
-

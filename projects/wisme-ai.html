@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Wisme-AI - Lakshya Khetan Portfolio</title>
+  <meta content="Wisme-AI - Conversational Learning App by Lakshya Khetan" name="description">
+  <meta content="Wisme-AI, Flutter, AI, Machine Learning, Education Technology, Firebase" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../images/logo.jpg" rel="icon">
+  <link href="../images/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../styles.css" rel="stylesheet">
+
+  <!-- Project Specific Styles -->
+  <style>
+    .project-hero {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      padding: 100px 0 60px;
+      color: white;
+      text-align: center;
+    }
+
+    .project-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .project-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .tech-tag {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .project-section {
+      padding: 80px 0;
+    }
+
+    .project-section.alternate {
+      background: #f8f9fa;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      color: #12d640;
+      margin-bottom: 20px;
+    }
+
+    .screenshot-container {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .screenshot-placeholder {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      height: 300px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #12d640;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #0ea832;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .project-links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .project-btn {
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-primary {
+      background: #12d640;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #0ea832;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #333;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #222;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .contribution-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contribution-card h5 {
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .innovation-badge {
+      background: #12d640;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .project-hero h1 {
+        font-size: 2rem;
+      }
+      
+      .project-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .back-button {
+        position: relative;
+        margin: 20px auto;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Back Button -->
+  <a href="../index.html#portfolio" class="back-button">
+    <i class="ri-arrow-left-line"></i> Back to Portfolio
+  </a>
+
+  <!-- Project Hero Section -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="innovation-badge">Research & Innovation</div>
+      <h1>Wisme-AI</h1>
+      <p>Conversational Learning App designed to solve low online course completion rates by transforming content into engaging, AI-generated audio dialogues</p>
+      
+      <div class="tech-stack">
+        <span class="tech-tag">Flutter</span>
+        <span class="tech-tag">Dart</span>
+        <span class="tech-tag">Firebase</span>
+        <span class="tech-tag">Google Cloud AI</span>
+        <span class="tech-tag">Firestore</span>
+        <span class="tech-tag">Real-time Analytics</span>
+        <span class="tech-tag">Audio AI</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank" class="project-btn btn-primary">
+          <i class="ri-github-line"></i> View Source Code
+        </a>
+        <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank" class="project-btn btn-secondary">
+          <i class="ri-research-line"></i> Research Documentation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Overview -->
+  <section class="project-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 style="color: #12d640; margin-bottom: 30px;">Project Innovation</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">
+            WisMe Research Assistant is an innovative AI-powered research tool designed to streamline academic and 
+            professional research processes. This collaborative project focuses on creating an intelligent assistant 
+            that can help researchers discover, analyze, and synthesize information from multiple sources efficiently.
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 25px;">
+            As a collaborative effort, I contributed to the conceptualization and development of key features that 
+            enhance the research workflow. The application integrates advanced AI capabilities to provide contextual 
+            research assistance, automated citation management, and intelligent content summarization.
+          </p>
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #12d640;">
+            <h5 style="color: #333; margin-bottom: 10px;">Collaboration Project</h5>
+            <p style="margin: 0; color: #666;">This project represents a collaborative effort with fellow developers to create an AI research assistant that enhances productivity and streamlines the research process for academics and professionals.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="screenshot-container">
+            <div class="screenshot-placeholder">
+              <div>
+                <i class="ri-robot-line" style="font-size: 4rem; margin-bottom: 15px;"></i>
+                <div>AI Conversation Interface</div>
+                <small style="opacity: 0.8;">Audio-First Learning Experience</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="project-section alternate">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="color: #12d640; margin-bottom: 20px;">Revolutionary Features</h2>
+        <p style="font-size: 1.1rem; color: #666;">Transforming online education through conversational AI</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-mic-ai-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">AI-Powered Conversations</h4>
+            <p>Advanced natural language processing transforms course content into dynamic, engaging audio dialogues that adapt to user learning patterns and preferences in real-time.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-headphone-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Audio-First UI/UX</h4>
+            <p>Innovative interface design prioritizing audio interactions with intuitive voice controls, ambient soundscapes, and accessibility features for diverse learning needs.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-fire-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Engagement Score System</h4>
+            <p>Proprietary algorithm calculating user engagement through multiple metrics including attention span, interaction frequency, and learning progress with personalized feedback.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-database-2-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Real-Time Analytics</h4>
+            <p>Comprehensive analytics system tracking learning patterns, engagement metrics, and progress indicators with Firebase integration for instant data synchronization.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-target-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">Product-Market Fit</h4>
+            <p>Built-in measurement tools for assessing market reception, user satisfaction, and educational effectiveness with continuous feedback integration for iterative improvement.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-repeat-line"></i>
+            </div>
+            <h4 style="margin-bottom: 15px;">High-Retention Learning</h4>
+            <p>Scientifically-designed learning loops and spaced repetition algorithms that enhance knowledge retention through optimized conversation timing and content delivery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Implementation -->
+  <section class="project-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="screenshot-container">
+            <div class="screenshot-placeholder">
+              <div>
+                <i class="ri-code-s-slash-line" style="font-size: 4rem; margin-bottom: 15px;"></i>
+                <div>Technical Architecture</div>
+                <small style="opacity: 0.8;">Full-Stack Implementation</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 style="color: #12d640; margin-bottom: 30px;">Technical Excellence</h2>
+          
+          <div style="margin-bottom: 30px;">
+            <h5 style="color: #333; margin-bottom: 15px;">Flutter Development</h5>
+            <p style="line-height: 1.8;">Cross-platform mobile application built with Flutter and Dart, ensuring consistent performance across iOS and Android with native-level user experience and smooth animations.</p>
+          </div>
+
+          <div style="margin-bottom: 30px;">
+            <h5 style="color: #333; margin-bottom: 15px;">Firebase Backend</h5>
+            <p style="line-height: 1.8;">Comprehensive Firebase integration including Authentication, Firestore database, Cloud Functions, and real-time synchronization for seamless user experience and data management.</p>
+          </div>
+
+          <div style="margin-bottom: 30px;">
+            <h5 style="color: #333; margin-bottom: 15px;">Google Cloud AI</h5>
+            <p style="line-height: 1.8;">Advanced AI services integration for natural language processing, speech recognition, text-to-speech conversion, and intelligent conversation generation with cloud-scale performance.</p>
+          </div>
+
+          <div style="margin-bottom: 30px;">
+            <h5 style="color: #333; margin-bottom: 15px;">Analytics System</h5>
+            <p style="line-height: 1.8;">Custom analytics implementation tracking user behavior, learning patterns, engagement metrics, and educational outcomes with real-time dashboard visualization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Contributions -->
+  <section class="project-section alternate">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="color: #12d640; margin-bottom: 20px;">My Key Contributions</h2>
+        <p style="font-size: 1.1rem; color: #666;">Leading development and innovation in conversational learning technology</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="contribution-card">
+            <h5><i class="ri-lightbulb-line"></i> Conceptualization & Vision</h5>
+            <p>Spearheaded the initial concept development, identified the problem of low course completion rates, and designed the conversational learning solution approach with comprehensive user research and market analysis.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="contribution-card">
+            <h5><i class="ri-smartphone-line"></i> Full-Stack Development</h5>
+            <p>Engineered the complete Flutter application from ground up, implemented Firebase backend services, integrated Google Cloud AI APIs, and developed the real-time analytics system.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="contribution-card">
+            <h5><i class="ri-palette-line"></i> Audio-First UX Design</h5>
+            <p>Designed and implemented the innovative audio-first user interface, created intuitive voice interaction patterns, and developed accessibility features for inclusive learning experiences.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="contribution-card">
+            <h5><i class="ri-bar-chart-box-line"></i> Analytics & Optimization</h5>
+            <p>Developed the proprietary engagement score algorithm, implemented comprehensive user behavior tracking, and created real-time performance monitoring systems for continuous improvement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Impact -->
+  <section class="project-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 style="color: #12d640; margin-bottom: 30px;">Research & Innovation Impact</h2>
+          <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 40px;">
+            Wisme-AI represents a significant contribution to educational technology research, introducing novel approaches 
+            to conversational learning and AI-powered content delivery. The project addresses fundamental challenges in 
+            online education through innovative technical solutions and user-centered design principles.
+          </p>
+          
+          <div class="row">
+            <div class="col-md-4">
+              <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <i class="ri-research-line" style="font-size: 3rem; color: #12d640; margin-bottom: 15px;"></i>
+                <h5>Research Innovation</h5>
+                <p>Novel approach to conversational learning in educational technology</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <i class="ri-user-heart-line" style="font-size: 3rem; color: #12d640; margin-bottom: 15px;"></i>
+                <h5>User-Centered Design</h5>
+                <p>Audio-first interface prioritizing accessibility and engagement</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                <i class="ri-rocket-line" style="font-size: 3rem; color: #12d640; margin-bottom: 15px;"></i>
+                <h5>Market Potential</h5>
+                <p>Addressing billion-dollar problem in online education completion rates</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="project-section" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+    <div class="container text-center">
+      <h2 style="margin-bottom: 30px;">Explore the Innovation</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">
+        Discover how conversational AI is transforming online education
+      </p>
+      
+      <div class="project-links">
+        <a href="https://github.com/Bhargs24/Wisme_ResearchApp2" target="_blank" class="project-btn" style="background: white; color: #333;">
+          <i class="ri-github-line"></i> View on GitHub
+        </a>
+        <a href="../index.html#portfolio" class="project-btn" style="background: rgba(255,255,255,0.2); color: white; backdrop-filter: blur(10px);">
+          <i class="ri-arrow-left-line"></i> Back to Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
