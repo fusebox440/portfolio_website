@@ -165,33 +165,30 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 **Lakshya Khetan**
-- 📧 Email: [your-email@domain.com]
-- 💼 LinkedIn: [Your LinkedIn Profile]
+- 📧 Email: lakshyakhetan00@gmail.com
 - 🐱 GitHub: [@fusebox440](https://github.com/fusebox440)
 - 📍 Location: Vellore, Tamil Nadu, India
 
 ## 🙏 Acknowledgments
 
 - Design inspiration from modern portfolio trends
-- Color palette inspired by Prerak Raja's design principles
 - Icons from Remix Icons and Bootstrap Icons
 - Fonts from Google Fonts
 
 ---
 
-Built with ❤️ by Lakshya Khetan | © 2025
+Built with ❤️ by Lakshya Khetan | © 2023
  👨‍💻 About the Developer
 
 Lakshya Khetan
 - 🎓 Computer Science Student at VIT Vellore
-- 💼 Full-Stack Developer & Software Engineer
+- 💼 Machine learning & Software Engineer
 - 🎙️ Senior Radio Jockey at VIT Community Radio
 - 💻 Passionate about AI/ML, Web Development, and Mobile Apps
 - 🌟 Active in NGO work and community service
 
 Connect with me:
 - GitHub: [@fusebox440](https://github.com/fusebox440)
-- LinkedIn: 
 - Email: lakshyakhetan00@gmail.com
 
 ---
@@ -199,6 +196,7 @@ Connect with me:
 **Made with ❤️ by Lakshya Khetan**
 
 *Ready to join the top 1% of tech companies!*
+
 
 
 
